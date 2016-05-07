@@ -51,5 +51,6 @@ By this app, you also can:
 
 
 
-N.B.  It was one of my long term pet project. Free to use educational purpose. But need my permission for using commercial purpose.
+### N.B.  It was one of my long term pet project. Free to use educational purpose. But need my permission for using commercial purpose.
+### A Swift version is also available at this link: https://github.com/partho-maple/Contacts-Combo_Swift
 
