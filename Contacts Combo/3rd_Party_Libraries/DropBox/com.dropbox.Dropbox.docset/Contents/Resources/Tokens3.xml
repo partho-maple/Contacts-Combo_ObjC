@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBAccountManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBAccountManager</TokenIdentifier>
+			<Abstract type="html">The account manager is responsible for linking new users and persisting account information
+across runs of your app. You typically create an account manager at app startup with your
+app key and secret and keep it until your app terminates.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccountManager/initWithAppKey:secret:</TokenIdentifier>
+			<Abstract type="html">Create a new account manager with your app&apos;s app key and secret. You can register your app or
+find your key at the [apps](https://www.dropbox.com/developers/apps ) page.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAppKey:(NSString *)key secret:(NSString *)secret</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAppKey:secret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DBAccountManager/setSharedManager:</TokenIdentifier>
+			<Abstract type="html">A convenient place to store your app&apos;s account manager.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setSharedManager:(DBAccountManager *)sharedManager</Declaration>
+			
+			
+			<Anchor>//api/name/setSharedManager:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DBAccountManager/sharedManager</TokenIdentifier>
+			<Abstract type="html">A convenient place to get your app&apos;s account manager.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>			
+			
+			<Declaration>+ (DBAccountManager *)sharedManager</Declaration>
+			
+			
+			<Anchor>//api/name/sharedManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccountManager/linkFromController:</TokenIdentifier>
+			<Abstract type="html">(iOS only) This method begins the process for linking new accounts.  The user
+will be prompted to log in and authorize your app.  The result is delivered to your
+app via a URL, and you must call handleOpenURL: to finish linking.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)linkFromController:(UIViewController *)rootController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rootController</Name>
+					<Abstract type="html">the topmost view controller in your controller hierarchy.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkFromController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccountManager/handleOpenURL:</TokenIdentifier>
+			<Abstract type="html">(iOS only) You must call this method in your app delegate&apos;s
+-application:openURL:sourceApplication:annotation: method in order to complete the link process.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>			
+			
+			<Declaration>- (DBAccount *)handleOpenURL:(NSURL *)url</Declaration>
+			
+			<ReturnValue><Abstract type="html">The account object if the link was successful, or nil if the user
+cancelled.</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccountManager/linkFromWindow:withCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">(OS X only) This method begins the process for linking new accounts.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)linkFromWindow:(NSWindow *)parentWindow withCompletionBlock:(DBLinkCompletionBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parentWindow</Name>
+					<Abstract type="html">the parent window the auth flow modal should be attached to.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">the block that gets called when the user is done linking.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkFromWindow:withCompletionBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccountManager/setLinkedAccount:</TokenIdentifier>
+			<Abstract type="html">The most recently linked account, or nil if there are no accounts currently linked.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBAccount *linkedAccount</Declaration>
+			
+			
+			<Anchor>//api/name/linkedAccount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBAccountManager/linkedAccount</TokenIdentifier>
+			<Abstract type="html">The most recently linked account, or nil if there are no accounts currently linked.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBAccount *linkedAccount</Declaration>
+			
+			
+			<Anchor>//api/name/linkedAccount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccountManager/setLinkedAccounts:</TokenIdentifier>
+			<Abstract type="html">All currently linked accounts, or nil if there are no accounts currently linked.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *linkedAccounts</Declaration>
+			
+			
+			<Anchor>//api/name/linkedAccounts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBAccountManager/linkedAccounts</TokenIdentifier>
+			<Abstract type="html">All currently linked accounts, or nil if there are no accounts currently linked.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *linkedAccounts</Declaration>
+			
+			
+			<Anchor>//api/name/linkedAccounts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccountManager/addObserver:block:</TokenIdentifier>
+			<Abstract type="html">Add block as an observer to get called whenever a new account is linked or an existing
+account is unlinked. The observer will be called regardless of whether the account was
+unlinked using -[DBAccount unlink] or by the user on the Dropbox website.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)addObserver:(id)observer block:(DBAccountManagerObserver)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>observer</Name>
+					<Abstract type="html">this is only used as a handle to unregister blocks with the removeObserver: method.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addObserver:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccountManager/removeObserver:</TokenIdentifier>
+			<Abstract type="html">Use this method to remove all blocks associated with observer.</Abstract>
+			<DeclaredIn>DBAccountManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeObserver:(id)observer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>observer</Name>
+					<Abstract type="html">the same value you provided to the addObserver:block: method.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeObserver:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

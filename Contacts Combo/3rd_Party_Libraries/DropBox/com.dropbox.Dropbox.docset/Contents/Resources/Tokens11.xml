@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBFileInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBFileInfo</TokenIdentifier>
+			<Abstract type="html">The file info class contains basic information about a file or folder.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFileInfo/setPath:</TokenIdentifier>
+			<Abstract type="html">The path of the file or folder.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBPath *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFileInfo/path</TokenIdentifier>
+			<Abstract type="html">The path of the file or folder.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBPath *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFileInfo/setIsFolder:</TokenIdentifier>
+			<Abstract type="html">Whether the item at path is a folder or a file.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isFolder</Declaration>
+			
+			
+			<Anchor>//api/name/isFolder</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFileInfo/isFolder</TokenIdentifier>
+			<Abstract type="html">Whether the item at path is a folder or a file.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isFolder</Declaration>
+			
+			
+			<Anchor>//api/name/isFolder</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFileInfo/setModifiedTime:</TokenIdentifier>
+			<Abstract type="html">The last time the file or folder was modified.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *modifiedTime</Declaration>
+			
+			
+			<Anchor>//api/name/modifiedTime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFileInfo/modifiedTime</TokenIdentifier>
+			<Abstract type="html">The last time the file or folder was modified.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *modifiedTime</Declaration>
+			
+			
+			<Anchor>//api/name/modifiedTime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFileInfo/setSize:</TokenIdentifier>
+			<Abstract type="html">The file&apos;s size. This property is always 0 for folders.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFileInfo/size</TokenIdentifier>
+			<Abstract type="html">The file&apos;s size. This property is always 0 for folders.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFileInfo/setThumbExists:</TokenIdentifier>
+			<Abstract type="html">Whether a thumbnail for this file can be requested from the server, based
+on the file format. Since thumbnails are generated only by the server, this
+value will be false on a locally-modified file until it finishes uploading.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL thumbExists</Declaration>
+			
+			
+			<Anchor>//api/name/thumbExists</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFileInfo/thumbExists</TokenIdentifier>
+			<Abstract type="html">Whether a thumbnail for this file can be requested from the server, based
+on the file format. Since thumbnails are generated only by the server, this
+value will be false on a locally-modified file until it finishes uploading.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL thumbExists</Declaration>
+			
+			
+			<Anchor>//api/name/thumbExists</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFileInfo/setIconName:</TokenIdentifier>
+			<Abstract type="html">The name of an appropriate icon to display for the file, taken
+from the Dropbox icon library.  Will be nil if no suggested icon
+is available.  For more information see the
+[metadata](https://www.dropbox.com/developers/core/docs#metadata )
+documentation.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *iconName</Declaration>
+			
+			
+			<Anchor>//api/name/iconName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFileInfo/iconName</TokenIdentifier>
+			<Abstract type="html">The name of an appropriate icon to display for the file, taken
+from the Dropbox icon library.  Will be nil if no suggested icon
+is available.  For more information see the
+[metadata](https://www.dropbox.com/developers/core/docs#metadata )
+documentation.</Abstract>
+			<DeclaredIn>DBFileInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *iconName</Declaration>
+			
+			
+			<Anchor>//api/name/iconName</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

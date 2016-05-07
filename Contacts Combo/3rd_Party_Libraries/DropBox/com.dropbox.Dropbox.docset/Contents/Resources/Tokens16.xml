@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBRecord.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBRecord</TokenIdentifier>
+			<Abstract type="html">A record represents an entry in a particular table and datastore. A record has a unique ID, and
+contains a set of fields, each of which has a name and a value. You can get records from a
+DBTable object.
+&lt;!-- paragraph separator in class docs for appledoc bug --&gt;
+Fields can hold values of the following types: NSNumber, NSString, NSData, NSDate, NSArray.
+For objects of type NSNumber, the value of &lt;code&gt;objCType&lt;/code&gt; is not guaranteed to be preserved,
+but the datastore will distinguish been boolean, integer, and floating-point values.  When you get
+a field that has a list value, its type will be DBList, which allows you to perform conflict-free
+list mutations.
+&lt;!-- paragraph separator in class docs for appledoc bug --&gt;
+Changes to this record are immediately visible to other record objects with the same
+&lt;code&gt;tableId&lt;/code&gt; and &lt;code&gt;recordId&lt;/code&gt; Calling &lt;code&gt;-[DBDatastore sync:]&lt;/code&gt;, which
+incorporates remote changes into your datastore, will also update any records you have a
+reference to.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DBRecord/isValidId:</TokenIdentifier>
+			<Abstract type="html">Returns YES if recordId is a valid ID for a DBRecord, or NO otherwise.
+IDs are case-sensitive, can be 1-64 characters long and may contain alphanumeric
+characters plus these punctuation characters: . - _ + / =
+IDs with a leading : are valid, but reserved for internal use. (Note that older
+SDKs limited these to 32 characters, so take care if your datastore needs to be
+accessed by legacy clients.)</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isValidId:(NSString *)recordId</Declaration>
+			
+			
+			<Anchor>//api/name/isValidId:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DBRecord/isValidFieldName:</TokenIdentifier>
+			<Abstract type="html">Returns YES if name is a valid name for a field in a DBRecord, or NO otherwise.
+Names are case-sensitive, can be 1-64 characters long and may contain alphanumeric
+characters plus these punctuation characters: . - _ + / =
+Names with a leading : are valid, but reserved for internal use. (Note that older
+SDKs limited these to 32 characters, so take care if your datastore needs to be
+accessed by legacy clients.)</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isValidFieldName:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/isValidFieldName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBRecord/setRecordId:</TokenIdentifier>
+			<Abstract type="html">The id of the record.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *recordId</Declaration>
+			
+			
+			<Anchor>//api/name/recordId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBRecord/recordId</TokenIdentifier>
+			<Abstract type="html">The id of the record.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *recordId</Declaration>
+			
+			
+			<Anchor>//api/name/recordId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBRecord/setTable:</TokenIdentifier>
+			<Abstract type="html">The table that contains this record.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBTable *table</Declaration>
+			
+			
+			<Anchor>//api/name/table</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBRecord/table</TokenIdentifier>
+			<Abstract type="html">The table that contains this record.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBTable *table</Declaration>
+			
+			
+			<Anchor>//api/name/table</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBRecord/setFields:</TokenIdentifier>
+			<Abstract type="html">The fields of this record.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBRecord/fields</TokenIdentifier>
+			<Abstract type="html">The fields of this record.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBRecord/setSize:</TokenIdentifier>
+			<Abstract type="html">The size of this record in bytes. The size of a record is
+calculated by summing the size of all values in all fields,
+plus the base size of an empty record itself.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBRecord/size</TokenIdentifier>
+			<Abstract type="html">The size of this record in bytes. The size of a record is
+calculated by summing the size of all values in all fields,
+plus the base size of an empty record itself.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBRecord/objectForKey:</TokenIdentifier>
+			<Abstract type="html">Get the value of a single field.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/objectForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBRecord/getOrCreateList:</TokenIdentifier>
+			<Abstract type="html">Returns the current list at the given field, or returns an empty list if no value
+is set. If the field has a non-list value, this method will raise an exception.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>- (DBList *)getOrCreateList:(NSString *)fieldName</Declaration>
+			
+			
+			<Anchor>//api/name/getOrCreateList:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBRecord/update:</TokenIdentifier>
+			<Abstract type="html">Update all the fields in the provided dictionary with the values that they map to.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>- (void)update:(NSDictionary *)fieldsToUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/update:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBRecord/setObject:forKey:</TokenIdentifier>
+			<Abstract type="html">Update a single field with the provided value.  The value must be non-nil.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>- (void)setObject:(id)obj forKey:(NSString *)fieldName</Declaration>
+			
+			
+			<Anchor>//api/name/setObject:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBRecord/removeObjectForKey:</TokenIdentifier>
+			<Abstract type="html">Remove a single field from the record.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeObjectForKey:(NSString *)fieldName</Declaration>
+			
+			
+			<Anchor>//api/name/removeObjectForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBRecord/deleteRecord</TokenIdentifier>
+			<Abstract type="html">Delete this record. This method has no effect on records which have already been deleted.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteRecord</Declaration>
+			
+			
+			<Anchor>//api/name/deleteRecord</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBRecord/setDeleted:</TokenIdentifier>
+			<Abstract type="html">Whether this record is deleted.  A deleted DBRecord can&apos;t be used to read or write fields.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isDeleted) BOOL deleted</Declaration>
+			
+			
+			<Anchor>//api/name/deleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBRecord/deleted</TokenIdentifier>
+			<Abstract type="html">Whether this record is deleted.  A deleted DBRecord can&apos;t be used to read or write fields.</Abstract>
+			<DeclaredIn>DBRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isDeleted) BOOL deleted</Declaration>
+			
+			
+			<Anchor>//api/name/deleted</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

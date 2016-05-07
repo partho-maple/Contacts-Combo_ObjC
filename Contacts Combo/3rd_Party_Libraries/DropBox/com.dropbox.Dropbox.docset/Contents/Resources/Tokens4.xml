@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBDatastore.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBDatastore</TokenIdentifier>
+			<Abstract type="html">A datastore is a simple, syncable database for app data. You can open the default datastore
+using openDefaultStoreForAccount:error: and open or create other datastores using a
+DBDatastoreManager.
+&lt;!-- paragraph separator in class docs for appledoc bug --&gt;
+You interact with data in the datastore using tables. You can call getTable: to get a table,
+or getTables: to list all tables in a datastore containing
+records.
+&lt;!-- paragraph separator in class docs for appledoc bug --&gt;
+Changes you make to the datastore will be visible immediately, and calling sync: will persist
+outgoing changes and queue them to be uploaded to the server. While a datastore is open, it will
+monitor for remote changes and download them when possible. When there are remote changes waiting
+to be incorporated, the DBDatastoreStatus will have its incoming property set to YES, and calling
+sync: will also apply those changes to your view of the datastore, resolving any conflicts along
+the way.
+&lt;!-- paragraph separator in class docs for appledoc bug --&gt;
+To find out when there are changes ready to be synced, add an observer using addObserver:block:
+to register a block that will be called every time status changes.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DBDatastore/isValidId:</TokenIdentifier>
+			<Abstract type="html">Returns YES if datastoreId is a valid ID for a DBDatastore, or NO otherwise.
+Datastore IDs come in 2 forms:</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isValidId:(NSString *)datastoreId</Declaration>
+			
+			
+			<Anchor>//api/name/isValidId:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DBDatastore/openDefaultStoreForAccount:error:</TokenIdentifier>
+			<Abstract type="html">Opens the default datastore for this account.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>+ (DBDatastore *)openDefaultStoreForAccount:(DBAccount *)account error:(DBError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/openDefaultStoreForAccount:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DBDatastore/openDefaultLocalStoreForAccountManager:error:</TokenIdentifier>
+			<Abstract type="html">Opens the local default datastore for this account manager.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>+ (DBDatastore *)openDefaultLocalStoreForAccountManager:(DBAccountManager *)accountManager error:(DBError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/openDefaultLocalStoreForAccountManager:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/close</TokenIdentifier>
+			<Abstract type="html">Close a datastore when you&apos;re done using it to indicate that you are no longer
+interested in receiving updates for this datastore.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>- (void)close</Declaration>
+			
+			
+			<Anchor>//api/name/close</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/getTables:</TokenIdentifier>
+			<Abstract type="html">Get all the tables in this datastore that contain records.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)getTables:(DBError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/getTables:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/getTable:</TokenIdentifier>
+			<Abstract type="html">Get a table with the specified ID, which can be used to insert or query records. If this is a
+new table ID, the table will not be visible until a record is inserted.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>- (DBTable *)getTable:(NSString *)tableId</Declaration>
+			
+			
+			<Anchor>//api/name/getTable:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/setTitle:</TokenIdentifier>
+			<Abstract type="html">Set the title for this datastore.  Will be nil if no title is set.
+Setting it to nil will delete the title field.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastore/title</TokenIdentifier>
+			<Abstract type="html">Set the title for this datastore.  Will be nil if no title is set.
+Setting it to nil will delete the title field.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/setMtime:</TokenIdentifier>
+			<Abstract type="html">The last modified time for this datastore, or nil if no data has been
+synced yet.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *mtime</Declaration>
+			
+			
+			<Anchor>//api/name/mtime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastore/mtime</TokenIdentifier>
+			<Abstract type="html">The last modified time for this datastore, or nil if no data has been
+synced yet.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *mtime</Declaration>
+			
+			
+			<Anchor>//api/name/mtime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/setSize:</TokenIdentifier>
+			<Abstract type="html">The current size of this datastore in bytes.  The overall size
+of a datastore is calculated by summing the size of all records,
+plus the base size of an empty datastore itself.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastore/size</TokenIdentifier>
+			<Abstract type="html">The current size of this datastore in bytes.  The overall size
+of a datastore is calculated by summing the size of all records,
+plus the base size of an empty datastore itself.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/setRecordCount:</TokenIdentifier>
+			<Abstract type="html">The total number of records in this datastore.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger recordCount</Declaration>
+			
+			
+			<Anchor>//api/name/recordCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastore/recordCount</TokenIdentifier>
+			<Abstract type="html">The total number of records in this datastore.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger recordCount</Declaration>
+			
+			
+			<Anchor>//api/name/recordCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/setUnsyncedChangesSize:</TokenIdentifier>
+			<Abstract type="html">The size in bytes of changes that will be queued for upload
+by the next call to sync:.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger unsyncedChangesSize</Declaration>
+			
+			
+			<Anchor>//api/name/unsyncedChangesSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastore/unsyncedChangesSize</TokenIdentifier>
+			<Abstract type="html">The size in bytes of changes that will be queued for upload
+by the next call to sync:.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger unsyncedChangesSize</Declaration>
+			
+			
+			<Anchor>//api/name/unsyncedChangesSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/sync:</TokenIdentifier>
+			<Abstract type="html">Apply all outstanding changes to the datastore, and also incorporate remote changes in.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)sync:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">A dictionary mapping of tableId to a set of DBRecord objects if the call was
+successful, or nil if an error occurred. The table IDs and records in the dictionary correspond
+to the tables and records that changed due to remote changes applied during this sync. If records
+are deleted by the sync, the DBRecords will have the deleted property set, but no fields.</Abstract></ReturnValue>
+			<Anchor>//api/name/sync:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/setOpen:</TokenIdentifier>
+			<Abstract type="html">Whether the datastore is currently open.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isOpen) BOOL open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastore/open</TokenIdentifier>
+			<Abstract type="html">Whether the datastore is currently open.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isOpen) BOOL open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/setStatus:</TokenIdentifier>
+			<Abstract type="html">The current sync status of the datastore.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBDatastoreStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastore/status</TokenIdentifier>
+			<Abstract type="html">The current sync status of the datastore.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBDatastoreStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/addObserver:block:</TokenIdentifier>
+			<Abstract type="html">Add block as an observer when the status of the datastore changes.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>- (void)addObserver:(id)observer block:(DBObserver)block</Declaration>
+			
+			
+			<Anchor>//api/name/addObserver:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/removeObserver:</TokenIdentifier>
+			<Abstract type="html">Remove all blocks registered for the given observer.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeObserver:(id)observer</Declaration>
+			
+			
+			<Anchor>//api/name/removeObserver:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/setDatastoreId:</TokenIdentifier>
+			<Abstract type="html">The ID for this datastore.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *datastoreId</Declaration>
+			
+			
+			<Anchor>//api/name/datastoreId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastore/datastoreId</TokenIdentifier>
+			<Abstract type="html">The ID for this datastore.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *datastoreId</Declaration>
+			
+			
+			<Anchor>//api/name/datastoreId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastore/setManager:</TokenIdentifier>
+			<Abstract type="html">The datastore manager for this datastore.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBDatastoreManager *manager</Declaration>
+			
+			
+			<Anchor>//api/name/manager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastore/manager</TokenIdentifier>
+			<Abstract type="html">The datastore manager for this datastore.</Abstract>
+			<DeclaredIn>DBDatastore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBDatastoreManager *manager</Declaration>
+			
+			
+			<Anchor>//api/name/manager</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

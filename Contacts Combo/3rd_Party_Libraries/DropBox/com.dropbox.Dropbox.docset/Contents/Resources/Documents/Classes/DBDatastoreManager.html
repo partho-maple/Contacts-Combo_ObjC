@@ -1,0 +1,1127 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DBDatastoreManager Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Dropbox </a></h1>
+				<a id="developerHome" href="../index.html">Dropbox, Inc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DBDatastoreManager Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/shutDown">&nbsp;&nbsp;&nbsp;&nbsp;shutDown</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/localManagerForAccountManager:">&nbsp;&nbsp;&nbsp;&nbsp;+ localManagerForAccountManager:</option>
+	
+	<option value="//api/name/managerForAccount:">&nbsp;&nbsp;&nbsp;&nbsp;+ managerForAccount:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addObserver:block:">&nbsp;&nbsp;&nbsp;&nbsp;- addObserver:block:</option>
+	
+	<option value="//api/name/createDatastore:">&nbsp;&nbsp;&nbsp;&nbsp;- createDatastore:</option>
+	
+	<option value="//api/name/deleteDatastore:error:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteDatastore:error:</option>
+	
+	<option value="//api/name/listDatastoreInfo:">&nbsp;&nbsp;&nbsp;&nbsp;- listDatastoreInfo:</option>
+	
+	<option value="//api/name/listDatastores:">&nbsp;&nbsp;&nbsp;&nbsp;- listDatastores:</option>
+	
+	<option value="//api/name/migrateToAccount:error:">&nbsp;&nbsp;&nbsp;&nbsp;- migrateToAccount:error:</option>
+	
+	<option value="//api/name/openDatastore:error:">&nbsp;&nbsp;&nbsp;&nbsp;- openDatastore:error:</option>
+	
+	<option value="//api/name/openDefaultDatastore:">&nbsp;&nbsp;&nbsp;&nbsp;- openDefaultDatastore:</option>
+	
+	<option value="//api/name/openOrCreateDatastore:error:">&nbsp;&nbsp;&nbsp;&nbsp;- openOrCreateDatastore:error:</option>
+	
+	<option value="//api/name/removeObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- removeObserver:</option>
+	
+	<option value="//api/name/shutDown">&nbsp;&nbsp;&nbsp;&nbsp;- shutDown</option>
+	
+	<option value="//api/name/uncacheDatastore:error:">&nbsp;&nbsp;&nbsp;&nbsp;- uncacheDatastore:error:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shutDown">shutDown</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/localManagerForAccountManager:">localManagerForAccountManager:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/managerForAccount:">managerForAccount:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addObserver:block:">addObserver:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createDatastore:">createDatastore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteDatastore:error:">deleteDatastore:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listDatastoreInfo:">listDatastoreInfo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listDatastores:">listDatastores:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/migrateToAccount:error:">migrateToAccount:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openDatastore:error:">openDatastore:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openDefaultDatastore:">openDefaultDatastore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openOrCreateDatastore:error:">openOrCreateDatastore:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeObserver:">removeObserver:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shutDown">shutDown</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uncacheDatastore:error:">uncacheDatastore:error:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DBDatastoreManager Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DBDatastoreManager Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DBDatastoreManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The datastore manager lets you list, create, open, and delete datastores. You can
+also add an observer to find out when the list of datastores changes.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/managerForAccount:">+&nbsp;managerForAccount:</a></code>
+		<span class="tooltip"><p>Gets the datastore manager for an account that has been linked via the account manager.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/localManagerForAccountManager:">+&nbsp;localManagerForAccountManager:</a></code>
+		<span class="tooltip"><p>Gets the local datastore manager for the accountManager.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openDefaultDatastore:">&ndash;&nbsp;openDefaultDatastore:</a></code>
+		<span class="tooltip"><p>Opens the default datastore for this account, or creates it if it doesn&rsquo;t exist.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listDatastores:">&ndash;&nbsp;listDatastores:</a></code>
+		<span class="tooltip"><p>Lists the <a href="../Classes/DBDatastoreInfo.html">DBDatastoreInfo</a> for each of the user&rsquo;s datastores, including
+the default datastore if it has been created.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listDatastoreInfo:">&ndash;&nbsp;listDatastoreInfo:</a></code>
+		<span class="tooltip"><p>Gets a map of ID to the <a href="../Classes/DBDatastoreInfo.html">DBDatastoreInfo</a> for each of the user&rsquo;s datastores, including the
+default datastore if it has been created. This method returns the most recent information
+from the server, but is overridden with the local version any time a local datastore has been changed
+and <code>-[DBDatastore sync:]</code> has been called (i.e. the changes have not yet been uploaded to the server).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/migrateToAccount:error:">&ndash;&nbsp;migrateToAccount:error:</a></code>
+		<span class="tooltip"><p>Returns a new <code>DBDatastoreManager</code> created by migrating a local <code>DBDatastoreManager</code> to
+the given account.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openDatastore:error:">&ndash;&nbsp;openDatastore:error:</a></code>
+		<span class="tooltip"><p>Open an existing datastore by its ID.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createDatastore:">&ndash;&nbsp;createDatastore:</a></code>
+		<span class="tooltip"><p>Creates and opens a new datastore with a unique ID.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openOrCreateDatastore:error:">&ndash;&nbsp;openOrCreateDatastore:error:</a></code>
+		<span class="tooltip"><p>Opens the datastore with the given ID, creating it if it does not already exist.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteDatastore:error:">&ndash;&nbsp;deleteDatastore:error:</a></code>
+		<span class="tooltip"><p>Deletes a datastore with the given ID.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uncacheDatastore:error:">&ndash;&nbsp;uncacheDatastore:error:</a></code>
+		<span class="tooltip"><p>Removes a datastore from the local cache.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addObserver:block:">&ndash;&nbsp;addObserver:block:</a></code>
+		<span class="tooltip"><p>Add a block to be called when a datastore is added or removed.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeObserver:">&ndash;&nbsp;removeObserver:</a></code>
+		<span class="tooltip"><p>Remove all blocks associated with the given observer.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shutDown">&ndash;&nbsp;shutDown</a></code>
+		<span class="tooltip"><p>Shuts down the datastore manager, which stops all syncing.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shutDown">&nbsp;&nbsp;shutDown</a></code>
+		<span class="tooltip"><p>Whether the datastore manager is currently shut down.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/shutDown" title="shutDown"></a>
+	<h3 class="subsubtitle method-title">shutDown</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the datastore manager is currently shut down.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isShutDown) BOOL shutDown</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/localManagerForAccountManager:" title="localManagerForAccountManager:"></a>
+	<h3 class="subsubtitle method-title">localManagerForAccountManager:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the local datastore manager for the accountManager.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (DBDatastoreManager *)localManagerForAccountManager:(DBAccountManager *)<em>accountManager</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Local datastores and migration are a preview feature for testing only, and should not
+be used in production apps.</strong></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/managerForAccount:" title="managerForAccount:"></a>
+	<h3 class="subsubtitle method-title">managerForAccount:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the datastore manager for an account that has been linked via the account manager.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (DBDatastoreManager *)managerForAccount:(DBAccount *)<em>account</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The returned object will be the only datastore manager for this account until you release
+it, call <a href="#//api/name/shutDown">shutDown</a>, or the account is unlinked.  Calling this method again in the
+mean time will return the same object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addObserver:block:" title="addObserver:block:"></a>
+	<h3 class="subsubtitle method-title">addObserver:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add a block to be called when a datastore is added or removed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addObserver:(id)<em>obj</em> block:(DBObserver)<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Observers will always be called in the main thread.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createDatastore:" title="createDatastore:"></a>
+	<h3 class="subsubtitle method-title">createDatastore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and opens a new datastore with a unique ID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (DBDatastore *)createDatastore:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly created datastore, or <code>nil</code> if an error occcurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteDatastore:error:" title="deleteDatastore:error:"></a>
+	<h3 class="subsubtitle method-title">deleteDatastore:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deletes a datastore with the given ID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)deleteDatastore:(NSString *)<em>datastoreId</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the datastore was deleted, or NO if an error occurrred.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You must close open datastores before deleting them.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listDatastoreInfo:" title="listDatastoreInfo:"></a>
+	<h3 class="subsubtitle method-title">listDatastoreInfo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets a map of ID to the <a href="../Classes/DBDatastoreInfo.html">DBDatastoreInfo</a> for each of the user&rsquo;s datastores, including the
+default datastore if it has been created. This method returns the most recent information
+from the server, but is overridden with the local version any time a local datastore has been changed
+and <code>-[DBDatastore sync:]</code> has been called (i.e. the changes have not yet been uploaded to the server).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)listDatastoreInfo:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A map of ID to the datastore <a href="../Classes/DBDatastoreInfo.html">DBDatastoreInfo</a> objects if successful, or <code>nil</code> if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listDatastores:" title="listDatastores:"></a>
+	<h3 class="subsubtitle method-title">listDatastores:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Lists the <a href="../Classes/DBDatastoreInfo.html">DBDatastoreInfo</a> for each of the user&rsquo;s datastores, including
+the default datastore if it has been created.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)listDatastores:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A list of datastore <a href="../Classes/DBDatastoreInfo.html">DBDatastoreInfo</a> objects if successful, or <code>nil</code> if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/migrateToAccount:error:" title="migrateToAccount:error:"></a>
+	<h3 class="subsubtitle method-title">migrateToAccount:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new <code>DBDatastoreManager</code> created by migrating a local <code>DBDatastoreManager</code> to
+the given account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (DBDatastoreManager *)migrateToAccount:(DBAccount *)<em>account</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The new datastore manager linked to the account, or <code>nil</code> if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This will move all datastores and data from the local <code>DbxDatastoreManager</code>
+to the new <code>DbxDatastoreManager</code>. This call doesn&rsquo;t immediately start
+uploading the data the server. A <code>DbxDatastore</code> and all of its changes will
+begin uploading the first time you open of that <code>DbxDatastore</code>. At that point
+they will also be merged with any existing changes on the server.</p>
+
+<p>The data is moved not copied, so the local datastore manager will no longer contain the
+data which is migrated.  This should be done with a freshly linked account which contains
+no local datastore changes.  If that isn&rsquo;t the case, any datastore changes in the target
+account which have not uploaded will be overwritten by the migrated data.</p>
+
+<p>This must be called on a local <code>DbxDatastoreManager</code>, and all of its datastores must
+be closed. If the account provided ever had a <code>DbxDatastoreManager</code> it must be
+shut down.  After this call, the current local <code>DbxDatastoreManager</code> will be shut
+down and emptied.</p>
+
+<p><strong>Local datastores and migration are a preview feature for testing only, and should not
+be used in production apps.</strong></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openDatastore:error:" title="openDatastore:error:"></a>
+	<h3 class="subsubtitle method-title">openDatastore:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Open an existing datastore by its ID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (DBDatastore *)openDatastore:(NSString *)<em>datastoreId</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The datastore with the given ID if successful, or <code>nil</code> if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The same datastore can&rsquo;t be opened more than once.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openDefaultDatastore:" title="openDefaultDatastore:"></a>
+	<h3 class="subsubtitle method-title">openDefaultDatastore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Opens the default datastore for this account, or creates it if it doesn&rsquo;t exist.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (DBDatastore *)openDefaultDatastore:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The default datastore if successful, or <code>nil</code> if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openOrCreateDatastore:error:" title="openOrCreateDatastore:error:"></a>
+	<h3 class="subsubtitle method-title">openOrCreateDatastore:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Opens the datastore with the given ID, creating it if it does not already exist.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (DBDatastore *)openOrCreateDatastore:(NSString *)<em>datastoreId</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The datastore with the given ID if successful, or <code>nil</code> if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Datastores can be created offline with this method, and their contents will be
+merged with any datastore of the same name when the app is online again.</p>
+
+<p>The same datastore can&rsquo;t be opened more than once.</p>
+
+<p>Call <code>-[DBDatastore isValidId:]</code> to check input strings before using them as a
+datastore ID.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeObserver:" title="removeObserver:"></a>
+	<h3 class="subsubtitle method-title">removeObserver:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove all blocks associated with the given observer.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeObserver:(id)<em>obj</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shutDown" title="shutDown"></a>
+	<h3 class="subsubtitle method-title">shutDown</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shuts down the datastore manager, which stops all syncing.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)shutDown</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>All associated <code>DBDatastore</code>s will be closed.  Unsynced changes to unclosed
+datastores will be lost. Changes that were synced before shutdown but not yet
+uploaded will be uploaded the next time that particular datastore is opened.</p>
+
+<p>After this call, the <code>DBDatastoreManager</code> and its <code>DBDatastore</code>s can no longer be used.
+You should get a new <code>DBDatastoreManager</code> via <a href="#//api/name/managerForAccount:">managerForAccount:</a>.</p>
+
+<p>The datastore manager will be automatically shut down if the app is unlinked remotely.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uncacheDatastore:error:" title="uncacheDatastore:error:"></a>
+	<h3 class="subsubtitle method-title">uncacheDatastore:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes a datastore from the local cache.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)uncacheDatastore:(NSString *)<em>datastoreId</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the datastore was uncached, or NO if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You must close open datastores before uncaching them.</p>
+
+<p>Any changes not yet uploaded to the server are discarded on uncache. If the datastore
+has such changes its <a href="../Classes/DBDatastoreStatus.html">DBDatastoreStatus</a> has its <code>incoming</code> property set to <code>YES</code>.
+The next time a datastore is opened its entire snapshot is downloaded from the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastoreManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Dropbox, Inc. All rights reserved. (Last updated: 2014-07-31)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

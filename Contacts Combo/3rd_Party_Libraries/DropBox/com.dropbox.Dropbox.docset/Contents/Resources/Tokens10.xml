@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBFile.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBFile</TokenIdentifier>
+			<Abstract type="html">The file object represents a particular file at a particular version. It has basic file
+operations such as reading and writing the file&apos;s contents and getting info about the
+file. It can also tell you the current sync status, whether there&apos;s a newer version
+available, and allows you to update to the newer version.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/readHandle:</TokenIdentifier>
+			<Abstract type="html">Returns a read-only file handle for the file. If the file is not cached then the method will
+block until the file is downloaded.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>- (NSFileHandle *)readHandle:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">A file handle if the file can be read, or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/readHandle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/readData:</TokenIdentifier>
+			<Abstract type="html">A wrapper for readHandle: that reads the entire file contents into an NSData object.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)readData:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">The file&apos;s contents if the file can be read, or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/readData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/readString:</TokenIdentifier>
+			<Abstract type="html">A wrapper for readHandle: that reads the entire file contents as a UTF8 encoded string.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)readString:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">The file&apos;s contents decoded as UTF8 if the file can be read, or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/readString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/writeContentsOfFile:shouldSteal:error:</TokenIdentifier>
+			<Abstract type="html">Updates the file&apos;s contents with the contents of the file at localPath.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)writeContentsOfFile:(NSString *)localPath shouldSteal:(BOOL)shouldSteal error:(DBError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shouldSteal</Name>
+					<Abstract type="html">whether the file at localPath should be moved from its
+current location (i.e. &quot;stolen&quot;) into management by the Sync SDK, or if it must
+be copied. If you are done with the file at localPath, then stealing is more
+efficient, but the behavior of writing to the file after stealing is undefined.
+Stealing will fail if the source file is not on the same device as the
+SDK cache, since it relies on the ability to rename without copying.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the file was written successfully, or NO if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/writeContentsOfFile:shouldSteal:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/writeData:error:</TokenIdentifier>
+			<Abstract type="html">Updates the contents of the file to be the bytes stored in data.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)writeData:(NSData *)data error:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the file was written successfully, or NO if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/writeData:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/writeString:error:</TokenIdentifier>
+			<Abstract type="html">Updates the contents of the file with the parameter string encoded in UTF8.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)writeString:(NSString *)string error:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the file was written successfully, or NO if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/writeString:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/appendData:error:</TokenIdentifier>
+			<Abstract type="html">Apppends the data supplied to the end of the file. If the file is not cached, then the method will
+block until the file is downloaded.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)appendData:(NSData *)data error:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the data was appended to the file successfully, or NO if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/appendData:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/appendString:error:</TokenIdentifier>
+			<Abstract type="html">Appends the UTF8 encoded string to the file. If the file is not cached, then the method will
+block until the file is downloaded.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)appendString:(NSString *)string error:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the string was appended to the file successfully, or NO if an error occured.</Abstract></ReturnValue>
+			<Anchor>//api/name/appendString:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/update:</TokenIdentifier>
+			<Abstract type="html">If there is a newer version of the file available, and it&apos;s cached (determined by the cached
+property on newerStatus, then this method will update the file object to reference the newer
+version so it can be read from or written to.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)update:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the file was written successfully, or NO if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/update:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/close</TokenIdentifier>
+			<Abstract type="html">Closes the file, preventing any further operations to occur and allowing the file to be opened
+again. This happens automatically when the object is deallocated.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>- (void)close</Declaration>
+			
+			
+			<Anchor>//api/name/close</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/setInfo:</TokenIdentifier>
+			<Abstract type="html">The DBFileInfo for the file.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBFileInfo *info</Declaration>
+			
+			
+			<Anchor>//api/name/info</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFile/info</TokenIdentifier>
+			<Abstract type="html">The DBFileInfo for the file.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBFileInfo *info</Declaration>
+			
+			
+			<Anchor>//api/name/info</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/setOpen:</TokenIdentifier>
+			<Abstract type="html">Whether the file is currently open.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isOpen) BOOL open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFile/open</TokenIdentifier>
+			<Abstract type="html">Whether the file is currently open.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isOpen) BOOL open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/setStatus:</TokenIdentifier>
+			<Abstract type="html">The current sync status for the file or thumbnail version represented by
+this DBFile.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBFileStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFile/status</TokenIdentifier>
+			<Abstract type="html">The current sync status for the file or thumbnail version represented by
+this DBFile.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBFileStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/setNewerStatus:</TokenIdentifier>
+			<Abstract type="html">The current sync status for the newer version of the file. If the file is the newest version,
+then this property is nil.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBFileStatus *newerStatus</Declaration>
+			
+			
+			<Anchor>//api/name/newerStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFile/newerStatus</TokenIdentifier>
+			<Abstract type="html">The current sync status for the newer version of the file. If the file is the newest version,
+then this property is nil.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBFileStatus *newerStatus</Declaration>
+			
+			
+			<Anchor>//api/name/newerStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/setIsThumb:</TokenIdentifier>
+			<Abstract type="html">Whether this DBFile represents a thumbnail, rather than the file contents.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isThumb</Declaration>
+			
+			
+			<Anchor>//api/name/isThumb</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFile/isThumb</TokenIdentifier>
+			<Abstract type="html">Whether this DBFile represents a thumbnail, rather than the file contents.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isThumb</Declaration>
+			
+			
+			<Anchor>//api/name/isThumb</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/addObserver:block:</TokenIdentifier>
+			<Abstract type="html">Add block as an observer when a property of the file changes.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>- (void)addObserver:(id)observer block:(DBObserver)block</Declaration>
+			
+			
+			<Anchor>//api/name/addObserver:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFile/removeObserver:</TokenIdentifier>
+			<Abstract type="html">Remove all blocks registered for the given observer.</Abstract>
+			<DeclaredIn>DBFile.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeObserver:(id)observer</Declaration>
+			
+			
+			<Anchor>//api/name/removeObserver:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

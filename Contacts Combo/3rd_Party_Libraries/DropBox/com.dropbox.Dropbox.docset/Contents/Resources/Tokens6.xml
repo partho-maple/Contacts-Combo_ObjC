@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBDatastoreManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBDatastoreManager</TokenIdentifier>
+			<Abstract type="html">The datastore manager lets you list, create, open, and delete datastores. You can
+also add an observer to find out when the list of datastores changes.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DBDatastoreManager/managerForAccount:</TokenIdentifier>
+			<Abstract type="html">Gets the datastore manager for an account that has been linked via the account manager.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>+ (DBDatastoreManager *)managerForAccount:(DBAccount *)account</Declaration>
+			
+			
+			<Anchor>//api/name/managerForAccount:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DBDatastoreManager/localManagerForAccountManager:</TokenIdentifier>
+			<Abstract type="html">Gets the local datastore manager for the accountManager.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>+ (DBDatastoreManager *)localManagerForAccountManager:(DBAccountManager *)accountManager</Declaration>
+			
+			
+			<Anchor>//api/name/localManagerForAccountManager:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/openDefaultDatastore:</TokenIdentifier>
+			<Abstract type="html">Opens the default datastore for this account, or creates it if it doesn&apos;t exist.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>- (DBDatastore *)openDefaultDatastore:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">The default datastore if successful, or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/openDefaultDatastore:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/listDatastores:</TokenIdentifier>
+			<Abstract type="html">Lists the DBDatastoreInfo for each of the user&apos;s datastores, including
+the default datastore if it has been created.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)listDatastores:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">A list of datastore DBDatastoreInfo objects if successful, or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/listDatastores:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/listDatastoreInfo:</TokenIdentifier>
+			<Abstract type="html">Gets a map of ID to the DBDatastoreInfo for each of the user&apos;s datastores, including the
+default datastore if it has been created. This method returns the most recent information
+from the server, but is overridden with the local version any time a local datastore has been changed
+and -[DBDatastore sync:] has been called (i.e. the changes have not yet been uploaded to the server).</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)listDatastoreInfo:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">A map of ID to the datastore DBDatastoreInfo objects if successful, or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/listDatastoreInfo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/migrateToAccount:error:</TokenIdentifier>
+			<Abstract type="html">Returns a new DBDatastoreManager created by migrating a local DBDatastoreManager to
+the given account.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>- (DBDatastoreManager *)migrateToAccount:(DBAccount *)account error:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">The new datastore manager linked to the account, or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/migrateToAccount:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/openDatastore:error:</TokenIdentifier>
+			<Abstract type="html">Open an existing datastore by its ID.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>- (DBDatastore *)openDatastore:(NSString *)datastoreId error:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">The datastore with the given ID if successful, or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/openDatastore:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/createDatastore:</TokenIdentifier>
+			<Abstract type="html">Creates and opens a new datastore with a unique ID.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>- (DBDatastore *)createDatastore:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">The newly created datastore, or nil if an error occcurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/createDatastore:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/openOrCreateDatastore:error:</TokenIdentifier>
+			<Abstract type="html">Opens the datastore with the given ID, creating it if it does not already exist.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>- (DBDatastore *)openOrCreateDatastore:(NSString *)datastoreId error:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">The datastore with the given ID if successful, or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/openOrCreateDatastore:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/deleteDatastore:error:</TokenIdentifier>
+			<Abstract type="html">Deletes a datastore with the given ID.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)deleteDatastore:(NSString *)datastoreId error:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the datastore was deleted, or NO if an error occurrred.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteDatastore:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/uncacheDatastore:error:</TokenIdentifier>
+			<Abstract type="html">Removes a datastore from the local cache.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)uncacheDatastore:(NSString *)datastoreId error:(DBError **)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the datastore was uncached, or NO if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/uncacheDatastore:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/addObserver:block:</TokenIdentifier>
+			<Abstract type="html">Add a block to be called when a datastore is added or removed.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)addObserver:(id)obj block:(DBObserver)block</Declaration>
+			
+			
+			<Anchor>//api/name/addObserver:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/removeObserver:</TokenIdentifier>
+			<Abstract type="html">Remove all blocks associated with the given observer.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeObserver:(id)obj</Declaration>
+			
+			
+			<Anchor>//api/name/removeObserver:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/shutDown</TokenIdentifier>
+			<Abstract type="html">Shuts down the datastore manager, which stops all syncing.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)shutDown</Declaration>
+			
+			
+			<Anchor>//api/name/shutDown</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreManager/setShutDown:</TokenIdentifier>
+			<Abstract type="html">Whether the datastore manager is currently shut down.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isShutDown) BOOL shutDown</Declaration>
+			
+			
+			<Anchor>//api/name/shutDown</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreManager/shutDown</TokenIdentifier>
+			<Abstract type="html">Whether the datastore manager is currently shut down.</Abstract>
+			<DeclaredIn>DBDatastoreManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isShutDown) BOOL shutDown</Declaration>
+			
+			
+			<Anchor>//api/name/shutDown</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

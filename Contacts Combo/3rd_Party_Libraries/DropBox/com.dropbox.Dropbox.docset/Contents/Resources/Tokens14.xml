@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBList.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBList</TokenIdentifier>
+			<Abstract type="html">An object that allows you to modify a list that is set as a value on a record.
+Lists can contain the same values as records, except for other lists. Any changes you make to the
+list are intelligently merged with changes made remotely.</Abstract>
+			<DeclaredIn>DBList.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBList/count</TokenIdentifier>
+			<Abstract type="html">Returns the total number of items in the list.</Abstract>
+			<DeclaredIn>DBList.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBList/objectAtIndex:</TokenIdentifier>
+			<Abstract type="html">Returns the object at the given index.</Abstract>
+			<DeclaredIn>DBList.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectAtIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/objectAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBList/insertObject:atIndex:</TokenIdentifier>
+			<Abstract type="html">Inserts an object at the given index, moving other objects further down the list.</Abstract>
+			<DeclaredIn>DBList.h</DeclaredIn>			
+			
+			<Declaration>- (void)insertObject:(id)obj atIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/insertObject:atIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBList/removeObjectAtIndex:</TokenIdentifier>
+			<Abstract type="html">Removes the object at the given index.</Abstract>
+			<DeclaredIn>DBList.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeObjectAtIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/removeObjectAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBList/addObject:</TokenIdentifier>
+			<Abstract type="html">Adds an object to the end of the list.</Abstract>
+			<DeclaredIn>DBList.h</DeclaredIn>			
+			
+			<Declaration>- (void)addObject:(id)obj</Declaration>
+			
+			
+			<Anchor>//api/name/addObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBList/removeLastObject</TokenIdentifier>
+			<Abstract type="html">Removes the last object from the list.</Abstract>
+			<DeclaredIn>DBList.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeLastObject</Declaration>
+			
+			
+			<Anchor>//api/name/removeLastObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBList/replaceObjectAtIndex:withObject:</TokenIdentifier>
+			<Abstract type="html">Replaces the item at the given index with the given object.</Abstract>
+			<DeclaredIn>DBList.h</DeclaredIn>			
+			
+			<Declaration>- (void)replaceObjectAtIndex:(NSUInteger)index withObject:(id)obj</Declaration>
+			
+			
+			<Anchor>//api/name/replaceObjectAtIndex:withObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBList/moveObjectAtIndex:toIndex:</TokenIdentifier>
+			<Abstract type="html">Moves the object from the given old index, so that it appears at the
+given new index.</Abstract>
+			<DeclaredIn>DBList.h</DeclaredIn>			
+			
+			<Declaration>- (void)moveObjectAtIndex:(NSUInteger)oldIndex toIndex:(NSUInteger)newIndex</Declaration>
+			
+			
+			<Anchor>//api/name/moveObjectAtIndex:toIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBList/setValues:</TokenIdentifier>
+			<Abstract type="html">Returns all objects in the list.</Abstract>
+			<DeclaredIn>DBList.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *values</Declaration>
+			
+			
+			<Anchor>//api/name/values</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBList/values</TokenIdentifier>
+			<Abstract type="html">Returns all objects in the list.</Abstract>
+			<DeclaredIn>DBList.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *values</Declaration>
+			
+			
+			<Anchor>//api/name/values</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

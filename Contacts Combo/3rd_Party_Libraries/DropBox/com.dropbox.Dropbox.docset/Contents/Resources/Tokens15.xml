@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBPath.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBPath</TokenIdentifier>
+			<Abstract type="html">The path object represents a valid Dropbox path, and knows how to do correct path comparisons.
+It also has convenience methods for constructing new paths.</Abstract>
+			<DeclaredIn>DBPath.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DBPath/root</TokenIdentifier>
+			<Abstract type="html">The top-most folder in your app&apos;s view of the user&apos;s Dropbox.</Abstract>
+			<DeclaredIn>DBPath.h</DeclaredIn>			
+			
+			<Declaration>+ (DBPath *)root</Declaration>
+			
+			
+			<Anchor>//api/name/root</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBPath/initWithString:</TokenIdentifier>
+			<Abstract type="html">Create a new path object from a string.  Some special characters, names, or encodings a
+are not allowed in a Dropbox path.  For more details see this
+[article](http://www.dropbox.com/help/145 ).</Abstract>
+			<DeclaredIn>DBPath.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithString:(NSString *)pathStr</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new path object if the contents of pathStr are a valid Dropbox path, nil otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBPath/name</TokenIdentifier>
+			<Abstract type="html">The unqualified name of the file or folder at this path.
+  For the root, this will return the same as stringValue. </Abstract>
+			<DeclaredIn>DBPath.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBPath/childPath:</TokenIdentifier>
+			<Abstract type="html">Create a new path by treating the current path as a path to a folder, and childName as the
+name of an item in that folder.</Abstract>
+			<DeclaredIn>DBPath.h</DeclaredIn>			
+			
+			<Declaration>- (DBPath *)childPath:(NSString *)childName</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new path, or nil if childName is invalid.</Abstract></ReturnValue>
+			<Anchor>//api/name/childPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBPath/parent</TokenIdentifier>
+			<Abstract type="html">Create a new path that is the folder containing the current path.
+For the root, this will return the same as stringValue.</Abstract>
+			<DeclaredIn>DBPath.h</DeclaredIn>			
+			
+			<Declaration>- (DBPath *)parent</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new path, or nil if path is already at the root.</Abstract></ReturnValue>
+			<Anchor>//api/name/parent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBPath/stringValue</TokenIdentifier>
+			<Abstract type="html">The fully qualified path (relative to the root) as a string, with original casing.</Abstract>
+			<DeclaredIn>DBPath.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringValue</Declaration>
+			
+			
+			<Anchor>//api/name/stringValue</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

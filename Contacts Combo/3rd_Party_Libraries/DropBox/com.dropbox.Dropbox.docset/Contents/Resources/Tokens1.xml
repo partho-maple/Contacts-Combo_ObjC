@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBAccount.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBAccount</TokenIdentifier>
+			<Abstract type="html">The account represents a particular user who has linked his account to your app. You can get
+account objects from the account manager.</Abstract>
+			<DeclaredIn>DBAccount.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccount/unlink</TokenIdentifier>
+			<Abstract type="html">This method unlinks a user&apos;s account from your app.</Abstract>
+			<DeclaredIn>DBAccount.h</DeclaredIn>			
+			
+			<Declaration>- (void)unlink</Declaration>
+			
+			
+			<Anchor>//api/name/unlink</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccount/setUserId:</TokenIdentifier>
+			<Abstract type="html">The user id of the account. This can be used to associate metadata with a given account.</Abstract>
+			<DeclaredIn>DBAccount.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBAccount/userId</TokenIdentifier>
+			<Abstract type="html">The user id of the account. This can be used to associate metadata with a given account.</Abstract>
+			<DeclaredIn>DBAccount.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccount/setLinked:</TokenIdentifier>
+			<Abstract type="html">Whether the account is currently linked. Note that accounts can be unlinked via the unlink
+method or from the Dropbox website.</Abstract>
+			<DeclaredIn>DBAccount.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isLinked) BOOL linked</Declaration>
+			
+			
+			<Anchor>//api/name/linked</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBAccount/linked</TokenIdentifier>
+			<Abstract type="html">Whether the account is currently linked. Note that accounts can be unlinked via the unlink
+method or from the Dropbox website.</Abstract>
+			<DeclaredIn>DBAccount.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isLinked) BOOL linked</Declaration>
+			
+			
+			<Anchor>//api/name/linked</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccount/setInfo:</TokenIdentifier>
+			<Abstract type="html">Information about the user of this account, or nil if no info is available.
+Account info is fetched in the background.  To be notified when account info is
+available or updated, use addObserver:block:.</Abstract>
+			<DeclaredIn>DBAccount.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBAccountInfo *info</Declaration>
+			
+			
+			<Anchor>//api/name/info</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBAccount/info</TokenIdentifier>
+			<Abstract type="html">Information about the user of this account, or nil if no info is available.
+Account info is fetched in the background.  To be notified when account info is
+available or updated, use addObserver:block:.</Abstract>
+			<DeclaredIn>DBAccount.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBAccountInfo *info</Declaration>
+			
+			
+			<Anchor>//api/name/info</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccount/addObserver:block:</TokenIdentifier>
+			<Abstract type="html">Add block as an observer of an account to get notified whenever the account&apos;s
+linked or info properties change.</Abstract>
+			<DeclaredIn>DBAccount.h</DeclaredIn>			
+			
+			<Declaration>- (void)addObserver:(id)observer block:(DBObserver)block</Declaration>
+			
+			
+			<Anchor>//api/name/addObserver:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccount/removeObserver:</TokenIdentifier>
+			<Abstract type="html">Remove all blocks associated with observer by the addObserver:block: method.</Abstract>
+			<DeclaredIn>DBAccount.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeObserver:(id)observer</Declaration>
+			
+			
+			<Anchor>//api/name/removeObserver:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

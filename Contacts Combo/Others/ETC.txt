@@ -1,0 +1,21 @@
+============================= Facebook App Infos =============================
+
+ClientID/AppID =>> 1602951503265336
+ClientKey/AppSecret =>>  99f564f0c23fa840283ba7c1ac719232
+RedirectURI =>>  
+authorizationURL =>>
+
+==============================================================================
+
+
+
+============================= Instagram App Infos =============================
+
+ClientID/AppID =>>
+ClientKey/AppSecret =>>
+RedirectURI =>>  http://www.google.com/OAuthCallback
+authorizationURL =>> https://instagram.com/oauth/authorize
+tokenURL =>> https://api.instagram.com/oauth/access_token
+
+==============================================================================
+

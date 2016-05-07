@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBAccountInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBAccountInfo</TokenIdentifier>
+			<Abstract type="html">Information about a user&apos;s account.</Abstract>
+			<DeclaredIn>DBAccountInfo.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccountInfo/setDisplayName:</TokenIdentifier>
+			<Abstract type="html">The recommended string to display to identify an account.</Abstract>
+			<DeclaredIn>DBAccountInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *displayName</Declaration>
+			
+			
+			<Anchor>//api/name/displayName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBAccountInfo/displayName</TokenIdentifier>
+			<Abstract type="html">The recommended string to display to identify an account.</Abstract>
+			<DeclaredIn>DBAccountInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *displayName</Declaration>
+			
+			
+			<Anchor>//api/name/displayName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccountInfo/setUserName:</TokenIdentifier>
+			<Abstract type="html">The user&apos;s name.</Abstract>
+			<DeclaredIn>DBAccountInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBAccountInfo/userName</TokenIdentifier>
+			<Abstract type="html">The user&apos;s name.</Abstract>
+			<DeclaredIn>DBAccountInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBAccountInfo/setOrgName:</TokenIdentifier>
+			<Abstract type="html">The user&apos;s organization&apos;s name if available, or nil otherwise.</Abstract>
+			<DeclaredIn>DBAccountInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *orgName</Declaration>
+			
+			
+			<Anchor>//api/name/orgName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBAccountInfo/orgName</TokenIdentifier>
+			<Abstract type="html">The user&apos;s organization&apos;s name if available, or nil otherwise.</Abstract>
+			<DeclaredIn>DBAccountInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *orgName</Declaration>
+			
+			
+			<Anchor>//api/name/orgName</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

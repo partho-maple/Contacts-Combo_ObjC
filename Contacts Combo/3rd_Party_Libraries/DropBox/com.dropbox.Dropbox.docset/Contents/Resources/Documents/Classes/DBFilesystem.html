@@ -1,0 +1,1623 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DBFilesystem Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Dropbox </a></h1>
+				<a id="developerHome" href="../index.html">Dropbox, Inc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DBFilesystem Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/account">&nbsp;&nbsp;&nbsp;&nbsp;account</option>
+	
+	<option value="//api/name/completedFirstSync">&nbsp;&nbsp;&nbsp;&nbsp;completedFirstSync</option>
+	
+	<option value="//api/name/fileCacheSize">&nbsp;&nbsp;&nbsp;&nbsp;fileCacheSize</option>
+	
+	<option value="//api/name/maxFileCacheSize">&nbsp;&nbsp;&nbsp;&nbsp;maxFileCacheSize</option>
+	
+	<option value="//api/name/shutDown">&nbsp;&nbsp;&nbsp;&nbsp;shutDown</option>
+	
+	<option value="//api/name/status">&nbsp;&nbsp;&nbsp;&nbsp;status</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/setSharedFilesystem:">&nbsp;&nbsp;&nbsp;&nbsp;+ setSharedFilesystem:</option>
+	
+	<option value="//api/name/sharedFilesystem">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedFilesystem</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addObserver:block:">&nbsp;&nbsp;&nbsp;&nbsp;- addObserver:block:</option>
+	
+	<option value="//api/name/addObserver:forPath:block:">&nbsp;&nbsp;&nbsp;&nbsp;- addObserver:forPath:block:</option>
+	
+	<option value="//api/name/addObserver:forPathAndChildren:block:">&nbsp;&nbsp;&nbsp;&nbsp;- addObserver:forPathAndChildren:block:</option>
+	
+	<option value="//api/name/addObserver:forPathAndDescendants:block:">&nbsp;&nbsp;&nbsp;&nbsp;- addObserver:forPathAndDescendants:block:</option>
+	
+	<option value="//api/name/createFile:error:">&nbsp;&nbsp;&nbsp;&nbsp;- createFile:error:</option>
+	
+	<option value="//api/name/createFolder:error:">&nbsp;&nbsp;&nbsp;&nbsp;- createFolder:error:</option>
+	
+	<option value="//api/name/deletePath:error:">&nbsp;&nbsp;&nbsp;&nbsp;- deletePath:error:</option>
+	
+	<option value="//api/name/fetchShareLinkForPath:shorten:error:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchShareLinkForPath:shorten:error:</option>
+	
+	<option value="//api/name/fileInfoForPath:error:">&nbsp;&nbsp;&nbsp;&nbsp;- fileInfoForPath:error:</option>
+	
+	<option value="//api/name/initWithAccount:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithAccount:</option>
+	
+	<option value="//api/name/listFolder:error:">&nbsp;&nbsp;&nbsp;&nbsp;- listFolder:error:</option>
+	
+	<option value="//api/name/movePath:toPath:error:">&nbsp;&nbsp;&nbsp;&nbsp;- movePath:toPath:error:</option>
+	
+	<option value="//api/name/openFile:error:">&nbsp;&nbsp;&nbsp;&nbsp;- openFile:error:</option>
+	
+	<option value="//api/name/openThumbnail:ofSize:inFormat:error:">&nbsp;&nbsp;&nbsp;&nbsp;- openThumbnail:ofSize:inFormat:error:</option>
+	
+	<option value="//api/name/removeObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- removeObserver:</option>
+	
+	<option value="//api/name/shutDown">&nbsp;&nbsp;&nbsp;&nbsp;- shutDown</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a filesystem object">Creating a filesystem object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting file information">Getting file information</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Operations">Operations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting the current state">Getting the current state</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Watching for changes">Watching for changes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Cache Configuration">Cache Configuration</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/account">account</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/completedFirstSync">completedFirstSync</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fileCacheSize">fileCacheSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxFileCacheSize">maxFileCacheSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shutDown">shutDown</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/status">status</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSharedFilesystem:">setSharedFilesystem:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedFilesystem">sharedFilesystem</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addObserver:block:">addObserver:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addObserver:forPath:block:">addObserver:forPath:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addObserver:forPathAndChildren:block:">addObserver:forPathAndChildren:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addObserver:forPathAndDescendants:block:">addObserver:forPathAndDescendants:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createFile:error:">createFile:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createFolder:error:">createFolder:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deletePath:error:">deletePath:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchShareLinkForPath:shorten:error:">fetchShareLinkForPath:shorten:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fileInfoForPath:error:">fileInfoForPath:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithAccount:">initWithAccount:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listFolder:error:">listFolder:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/movePath:toPath:error:">movePath:toPath:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openFile:error:">openFile:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openThumbnail:ofSize:inFormat:error:">openThumbnail:ofSize:inFormat:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeObserver:">removeObserver:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shutDown">shutDown</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DBFilesystem Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DBFilesystem Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DBFilesystem.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The filesystem object provides a files and folder view of a user&rsquo;s Dropbox. The most basic
+operations are listing a folder and opening a file, but it also allows you to move, delete, and
+create files and folders.  The filesystem automatically synchronizes changes with the Dropbox
+server in the background.</p>
+
+<!-- paragraph separator in class docs for appledoc bug -->
+
+
+<p>File and folder info for a user&rsquo;s Dropbox is mirrored locally and synced in the background.
+The content of a file is not downloaded until the file is opened, after which it is cached
+locally, up to a configured maximum size (defaulting to 500MB). If the file cache grows beyond
+the maximum size, the least recently used files will be removed from the cache to free space.
+Cached files will never be removed while in use: i.e. when a <a href="DBFile"><code>DBFile</code></a> is open, or
+when there is an outstanding upload or download, so it is possible for the cache to temporarily
+exceed the limit. The cache size can be set to zero, in which case files are removed from the
+cache as soon as they are no longer in-use.</p>
+
+<!-- paragraph separator in class docs for appledoc bug -->
+
+
+<p>Background syncing will remain active if there are outstanding changes to upload or download,
+if there are open files, or if there are any observers registered for paths. Otherwise, syncing
+will be paused to preserve battery life until you access the filesystem again.</p>
+
+<!-- paragraph separator in class docs for appledoc bug -->
+
+
+<p>A <code>DBFilesystem</code> instance is tied to a linked user account, and will be shut down if the account
+is unlinked. In this case, most methods will fail with an error code of <code>DBErrorAuth</code>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating a filesystem object" name="task_Creating a filesystem object"></a>
+						<h3 class="subsubtitle task-title">Creating a filesystem object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithAccount:">&ndash;&nbsp;initWithAccount:</a></code>
+		<span class="tooltip"><p>Create a new filesystem object with a linked <a href="DBAccount">account</a> from the
+<a href="DBAccountManager">account manager</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSharedFilesystem:">+&nbsp;setSharedFilesystem:</a></code>
+		<span class="tooltip"><p>A convienent place to store your app&rsquo;s filesystem</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedFilesystem">+&nbsp;sharedFilesystem</a></code>
+		<span class="tooltip"><p>A convienent place to get your app&rsquo;s filesystem</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting file information" name="task_Getting file information"></a>
+						<h3 class="subsubtitle task-title">Getting file information</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listFolder:error:">&ndash;&nbsp;listFolder:error:</a></code>
+		<span class="tooltip"><p>Returns a list of DBFileInfo objects representing the files contained in the folder at <code>path</code>.
+If <a href="#//api/name/completedFirstSync">completedFirstSync</a> is false, then this call will block until the first sync completes or an
+error occurs.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fileInfoForPath:error:">&ndash;&nbsp;fileInfoForPath:error:</a></code>
+		<span class="tooltip"><p>Returns the <a href="DBFileInfo">file info</a> for the file or folder at <code>path</code>, or
+<code>nil</code> if an error occurred.  If there is no file or folder at <code>path</code>, returns
+<code>nil</code> and sets <code>error</code> to <code>DBErrorParamsNotFound</code>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Operations" name="task_Operations"></a>
+						<h3 class="subsubtitle task-title">Operations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openFile:error:">&ndash;&nbsp;openFile:error:</a></code>
+		<span class="tooltip"><p>Opens an existing file and returns a <a href="DBFile">file</a> object representing the file at <code>path</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createFile:error:">&ndash;&nbsp;createFile:error:</a></code>
+		<span class="tooltip"><p>Creates a new file at <code>path</code> and returns a file object open at that path.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openThumbnail:ofSize:inFormat:error:">&ndash;&nbsp;openThumbnail:ofSize:inFormat:error:</a></code>
+		<span class="tooltip"><p>Opens a thumbnail for an existing file and returns a <a href="DBFile">file</a> object
+representing a thumbnail for the file at <code>path</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createFolder:error:">&ndash;&nbsp;createFolder:error:</a></code>
+		<span class="tooltip"><p>Creates a new folder at <code>path</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deletePath:error:">&ndash;&nbsp;deletePath:error:</a></code>
+		<span class="tooltip"><p>Deletes the file or folder at <code>path</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/movePath:toPath:error:">&ndash;&nbsp;movePath:toPath:error:</a></code>
+		<span class="tooltip"><p>Moves a file or folder at <code>fromPath</code> to <code>toPath</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchShareLinkForPath:shorten:error:">&ndash;&nbsp;fetchShareLinkForPath:shorten:error:</a></code>
+		<span class="tooltip"><p>Returns a link to the file or folder at <code>path</code>, suitable for sharing. The link
+will optionally be shortened using the Dropbox URL shortener.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting the current state" name="task_Getting the current state"></a>
+						<h3 class="subsubtitle task-title">Getting the current state</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/account">&nbsp;&nbsp;account</a></code>
+		<span class="tooltip"><p>The <a href="DBAccount">account</a> object this filesystem was created with.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/completedFirstSync">&nbsp;&nbsp;completedFirstSync</a></code>
+		<span class="tooltip"><p>When a user&rsquo;s account is first linked, the filesystem needs to be synced with the server before
+it can be used. This property indicates whether the first sync has completed and the filesystem
+is ready to use.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shutDown">&nbsp;&nbsp;shutDown</a></code>
+		<span class="tooltip"><p>Whether the filesystem is currently shut down. The filesystem will shut down if the account
+associated with this filesystem becomes unlinked.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/status">&nbsp;&nbsp;status</a></code>
+		<span class="tooltip"><p>The status of background synchronization.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Watching for changes" name="task_Watching for changes"></a>
+						<h3 class="subsubtitle task-title">Watching for changes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addObserver:block:">&ndash;&nbsp;addObserver:block:</a></code>
+		<span class="tooltip"><p>Add an observer to be notified any time a property of the filesystem changes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addObserver:forPath:block:">&ndash;&nbsp;addObserver:forPath:block:</a></code>
+		<span class="tooltip"><p>Add an observer to be notified any time the file or folder at <code>path</code> changes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addObserver:forPathAndChildren:block:">&ndash;&nbsp;addObserver:forPathAndChildren:block:</a></code>
+		<span class="tooltip"><p>Add an observer to be notified any time the folder at <code>path</code> changes or a file or folder
+directly contained in <code>path</code> changes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addObserver:forPathAndDescendants:block:">&ndash;&nbsp;addObserver:forPathAndDescendants:block:</a></code>
+		<span class="tooltip"><p>Add an observer to be notified any time the folder at <code>path</code> changes or a file or folder
+contained somewhere beneath <code>path</code> changes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeObserver:">&ndash;&nbsp;removeObserver:</a></code>
+		<span class="tooltip"><p>Unregister all blocks associated with <code>observer</code> from receiving updates.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shutDown">&ndash;&nbsp;shutDown</a></code>
+		<span class="tooltip"><p>Shuts down the filesystem, which stops all syncing.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Cache Configuration" name="task_Cache Configuration"></a>
+						<h3 class="subsubtitle task-title">Cache Configuration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fileCacheSize">&nbsp;&nbsp;fileCacheSize</a></code>
+		<span class="tooltip"><p>The current total disk space consumed by files in the cache.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxFileCacheSize">&nbsp;&nbsp;maxFileCacheSize</a></code>
+		<span class="tooltip"><p>The configured maximum size of files in the cache.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/account" title="account"></a>
+	<h3 class="subsubtitle method-title">account</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="DBAccount">account</a> object this filesystem was created with.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) DBAccount *account</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/completedFirstSync" title="completedFirstSync"></a>
+	<h3 class="subsubtitle method-title">completedFirstSync</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When a user&rsquo;s account is first linked, the filesystem needs to be synced with the server before
+it can be used. This property indicates whether the first sync has completed and the filesystem
+is ready to use.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL completedFirstSync</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fileCacheSize" title="fileCacheSize"></a>
+	<h3 class="subsubtitle method-title">fileCacheSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current total disk space consumed by files in the cache.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) unsigned long long fileCacheSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxFileCacheSize" title="maxFileCacheSize"></a>
+	<h3 class="subsubtitle method-title">maxFileCacheSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The configured maximum size of files in the cache.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) unsigned long long maxFileCacheSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Once set, this setting will remain in effect across app restarts. When the cache size
+is lowered, this method will immediately clean up the cache based on the new limit.
+See the <a href="DBFilesystem">class documentation</a> for more information on cache management.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shutDown" title="shutDown"></a>
+	<h3 class="subsubtitle method-title">shutDown</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the filesystem is currently shut down. The filesystem will shut down if the account
+associated with this filesystem becomes unlinked.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isShutDown) BOOL shutDown</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/status" title="status"></a>
+	<h3 class="subsubtitle method-title">status</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The status of background synchronization.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) DBSyncStatus *status</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/setSharedFilesystem:" title="setSharedFilesystem:"></a>
+	<h3 class="subsubtitle method-title">setSharedFilesystem:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A convienent place to store your app&rsquo;s filesystem</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setSharedFilesystem:(DBFilesystem *)<em>filesystem</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedFilesystem" title="sharedFilesystem"></a>
+	<h3 class="subsubtitle method-title">sharedFilesystem</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A convienent place to get your app&rsquo;s filesystem</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (DBFilesystem *)sharedFilesystem</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addObserver:block:" title="addObserver:block:"></a>
+	<h3 class="subsubtitle method-title">addObserver:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add an observer to be notified any time a property of the filesystem changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)addObserver:(id)<em>observer</em> block:(DBObserver)<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The block will be called anytime completedFirstSync, shutDown, or status changes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addObserver:forPath:block:" title="addObserver:forPath:block:"></a>
+	<h3 class="subsubtitle method-title">addObserver:forPath:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add an observer to be notified any time the file or folder at <code>path</code> changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)addObserver:(id)<em>observer</em> forPath:(DBPath *)<em>path</em> block:(DBObserver)<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addObserver:forPathAndChildren:block:" title="addObserver:forPathAndChildren:block:"></a>
+	<h3 class="subsubtitle method-title">addObserver:forPathAndChildren:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add an observer to be notified any time the folder at <code>path</code> changes or a file or folder
+directly contained in <code>path</code> changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)addObserver:(id)<em>observer</em> forPathAndChildren:(DBPath *)<em>path</em> block:(DBObserver)<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addObserver:forPathAndDescendants:block:" title="addObserver:forPathAndDescendants:block:"></a>
+	<h3 class="subsubtitle method-title">addObserver:forPathAndDescendants:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add an observer to be notified any time the folder at <code>path</code> changes or a file or folder
+contained somewhere beneath <code>path</code> changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)addObserver:(id)<em>observer</em> forPathAndDescendants:(DBPath *)<em>path</em> block:(DBObserver)<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createFile:error:" title="createFile:error:"></a>
+	<h3 class="subsubtitle method-title">createFile:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new file at <code>path</code> and returns a file object open at that path.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (DBFile *)createFile:(DBPath *)<em>path</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly created <a href="DBFile">file</a> object if the file was opened successfuly, or <code>nil</code> if an
+error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createFolder:error:" title="createFolder:error:"></a>
+	<h3 class="subsubtitle method-title">createFolder:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new folder at <code>path</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)createFolder:(DBPath *)<em>path</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the folder was created successfully, or NO if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deletePath:error:" title="deletePath:error:"></a>
+	<h3 class="subsubtitle method-title">deletePath:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deletes the file or folder at <code>path</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)deletePath:(DBPath *)<em>path</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the file or folder was deleted successfully, or NO if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchShareLinkForPath:shorten:error:" title="fetchShareLinkForPath:shorten:error:"></a>
+	<h3 class="subsubtitle method-title">fetchShareLinkForPath:shorten:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a link to the file or folder at <code>path</code>, suitable for sharing. The link
+will optionally be shortened using the Dropbox URL shortener.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)fetchShareLinkForPath:(DBPath *)<em>path</em> shorten:(BOOL)<em>shorten</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the link URL, or <code>nil</code> if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the file or folder was created locally but not yet uploaded, a link will be
+created, and viewing it before the upload is complete will result in a status
+page indicating the pending upload.</p>
+
+<p>This requires a server request. It will fail if the app is offline. It
+shouldn&rsquo;t be called on the main thread.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fileInfoForPath:error:" title="fileInfoForPath:error:"></a>
+	<h3 class="subsubtitle method-title">fileInfoForPath:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="DBFileInfo">file info</a> for the file or folder at <code>path</code>, or
+<code>nil</code> if an error occurred.  If there is no file or folder at <code>path</code>, returns
+<code>nil</code> and sets <code>error</code> to <code>DBErrorParamsNotFound</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (DBFileInfo *)fileInfoForPath:(DBPath *)<em>path</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithAccount:" title="initWithAccount:"></a>
+	<h3 class="subsubtitle method-title">initWithAccount:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a new filesystem object with a linked <a href="DBAccount">account</a> from the
+<a href="DBAccountManager">account manager</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithAccount:(DBAccount *)<em>account</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listFolder:error:" title="listFolder:error:"></a>
+	<h3 class="subsubtitle method-title">listFolder:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a list of DBFileInfo objects representing the files contained in the folder at <code>path</code>.
+If <a href="#//api/name/completedFirstSync">completedFirstSync</a> is false, then this call will block until the first sync completes or an
+error occurs.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)listFolder:(DBPath *)<em>path</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array of DBFileInfo objects if successful, or <code>nil</code> if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/movePath:toPath:error:" title="movePath:toPath:error:"></a>
+	<h3 class="subsubtitle method-title">movePath:toPath:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Moves a file or folder at <code>fromPath</code> to <code>toPath</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)movePath:(DBPath *)<em>fromPath</em> toPath:(DBPath *)<em>toPath</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the file or folder was moved successfully, or NO if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openFile:error:" title="openFile:error:"></a>
+	<h3 class="subsubtitle method-title">openFile:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Opens an existing file and returns a <a href="DBFile">file</a> object representing the file at <code>path</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (DBFile *)openFile:(DBPath *)<em>path</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="DBFile">file</a> object if the file was opened successfully, or <code>nil</code> if an error
+occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Files are opened at the newest cached version if the file is cached. Otherwise, the file will
+open at the latest server version and start downloading. Check the <code>status</code> property of the
+returned file object to determine whether it&rsquo;s cached. Only 1 file can be open at a given path at
+the same time.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openThumbnail:ofSize:inFormat:error:" title="openThumbnail:ofSize:inFormat:error:"></a>
+	<h3 class="subsubtitle method-title">openThumbnail:ofSize:inFormat:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Opens a thumbnail for an existing file and returns a <a href="DBFile">file</a> object
+representing a thumbnail for the file at <code>path</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (DBFile *)openThumbnail:(DBPath *)<em>path</em> ofSize:(DBThumbSize)<em>size</em> inFormat:(DBThumbFormat)<em>format</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="DBFile">file</a> object if the thumbnail was opened successfully, or
+<code>nil</code> if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Thumbnails are opened at the newest cached version if the thumbnail is cached.
+Otherwise, the thumbnail will open at the latest version and start downloading.
+Check the <code>status</code> property of the returned file object to determine whether
+it&rsquo;s cached.</p>
+
+<p>Thumbnails are generated on the server and cached separately.  When offline
+a thumbnail might be unavailable even if the file contents are available. If
+a file is modified locally, the thumbnail will not be available until its
+upload completes. Check the <code>thumbExists</code> property of the file&rsquo;s info to
+find out if a thumbnail is available for download.</p>
+
+<p>The DBFile object representing a thumbnail is unrelated to any DBFile opened
+on the file itself.  Thumbnails are read-only &ndash; any attempt to write will fail.
+It is possible to open multiple thumbnails (for instance, of different sizes)
+on the same path.</p>
+
+<p>Thumbnails are scaled (not cropped) in a way which preserves the original
+images aspect ratio, to a size which fits within a bounding box defined by the
+size parameter.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeObserver:" title="removeObserver:"></a>
+	<h3 class="subsubtitle method-title">removeObserver:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unregister all blocks associated with <code>observer</code> from receiving updates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeObserver:(id)<em>observer</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shutDown" title="shutDown"></a>
+	<h3 class="subsubtitle method-title">shutDown</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shuts down the filesystem, which stops all syncing.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)shutDown</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>All associated <code>DBFile</code>s will be closed.  Changes that were made to files
+before shutdown will be uploaded the next time a <code>DBFilesystem</code> is created.</p>
+
+<p>After this call, the <code>DBFilesystem</code> and its <code>DBFile</code>s can no longer be used.
+You should get a new <code>DBFilesystem</code> via <a href="#//api/name/initWithAccount:">initWithAccount:</a>.</p>
+
+<p>The filesystem will be automatically shut down if the app is unlinked remotely.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBFilesystem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Dropbox, Inc. All rights reserved. (Last updated: 2014-07-31)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

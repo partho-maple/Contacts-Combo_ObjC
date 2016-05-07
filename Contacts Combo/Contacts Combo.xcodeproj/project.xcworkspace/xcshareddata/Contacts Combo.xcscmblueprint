@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "00E0515E341563D799E73932ACA2EDD0492EA0FC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "22754eea-fc93-e339-b032-c1f495b90c16++2896" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "22754eea-fc93-e339-b032-c1f495b90c16++2896" : 0,
+    "00E0515E341563D799E73932ACA2EDD0492EA0FC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "80E313E1-3277-4B15-8E42-6A29D571133F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "22754eea-fc93-e339-b032-c1f495b90c16++2896" : "Contacts-Combo_ObjC\/Contacts%20Combo\/3rd_Party_Libraries\/Google_Client_API\/OAuth2\/",
+    "00E0515E341563D799E73932ACA2EDD0492EA0FC" : "Contacts-Combo_ObjC\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Contacts Combo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Contacts Combo\/Contacts Combo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/partho-maple\/Contacts-Combo_ObjC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "00E0515E341563D799E73932ACA2EDD0492EA0FC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/gtm-oauth2.googlecode.com\/svn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "22754eea-fc93-e339-b032-c1f495b90c16++2896"
+    }
+  ]
+}

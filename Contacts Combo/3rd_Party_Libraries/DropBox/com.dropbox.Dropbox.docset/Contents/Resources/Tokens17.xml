@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBSyncOperationStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBSyncOperationStatus</TokenIdentifier>
+			<Abstract type="html">The current status of one type of background synchronization operation
+in a DBFilesystem.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBSyncOperationStatus/setInProgress:</TokenIdentifier>
+			<Abstract type="html">Indicates that operations are in progress or queued for retry.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL inProgress</Declaration>
+			
+			
+			<Anchor>//api/name/inProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBSyncOperationStatus/inProgress</TokenIdentifier>
+			<Abstract type="html">Indicates that operations are in progress or queued for retry.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL inProgress</Declaration>
+			
+			
+			<Anchor>//api/name/inProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBSyncOperationStatus/setError:</TokenIdentifier>
+			<Abstract type="html">If the most recent operation failed, the failure is represented here.
+Otherwise this field is nil.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBSyncOperationStatus/error</TokenIdentifier>
+			<Abstract type="html">If the most recent operation failed, the failure is represented here.
+Otherwise this field is nil.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

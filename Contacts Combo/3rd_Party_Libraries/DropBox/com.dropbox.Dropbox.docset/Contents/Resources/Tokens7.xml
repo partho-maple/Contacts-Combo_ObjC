@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBDatastoreStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBDatastoreStatus</TokenIdentifier>
+			<Abstract type="html">Sync status for a DBDatastore, including any errors that are preventing
+syncing.</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreStatus/setConnected:</TokenIdentifier>
+			<Abstract type="html">Whether the API is in active communication with the server so that remote changes are likely to be
+visible quickly, and local changes can be uploaded soon. The API will attempt to connect when datastores
+are open, but may fail if offline.</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL connected</Declaration>
+			
+			
+			<Anchor>//api/name/connected</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreStatus/connected</TokenIdentifier>
+			<Abstract type="html">Whether the API is in active communication with the server so that remote changes are likely to be
+visible quickly, and local changes can be uploaded soon. The API will attempt to connect when datastores
+are open, but may fail if offline.</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL connected</Declaration>
+			
+			
+			<Anchor>//api/name/connected</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreStatus/setDownloading:</TokenIdentifier>
+			<Abstract type="html">Whether there are remote changes that need to be downloaded from the server.
+Always set when a DBDatastore is opened until the first successful check for updates.</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL downloading</Declaration>
+			
+			
+			<Anchor>//api/name/downloading</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreStatus/downloading</TokenIdentifier>
+			<Abstract type="html">Whether there are remote changes that need to be downloaded from the server.
+Always set when a DBDatastore is opened until the first successful check for updates.</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL downloading</Declaration>
+			
+			
+			<Anchor>//api/name/downloading</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreStatus/setUploading:</TokenIdentifier>
+			<Abstract type="html">Whether there are local changes that need to be uploaded to the server.</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL uploading</Declaration>
+			
+			
+			<Anchor>//api/name/uploading</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreStatus/uploading</TokenIdentifier>
+			<Abstract type="html">Whether there are local changes that need to be uploaded to the server.</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL uploading</Declaration>
+			
+			
+			<Anchor>//api/name/uploading</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreStatus/setIncoming:</TokenIdentifier>
+			<Abstract type="html">Whether there are remote changes that will be incorporated by the next
+call to -[DBDatastore sync:].</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL incoming</Declaration>
+			
+			
+			<Anchor>//api/name/incoming</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreStatus/incoming</TokenIdentifier>
+			<Abstract type="html">Whether there are remote changes that will be incorporated by the next
+call to -[DBDatastore sync:].</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL incoming</Declaration>
+			
+			
+			<Anchor>//api/name/incoming</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreStatus/setOutgoing:</TokenIdentifier>
+			<Abstract type="html">Whether there are local changes that haven&apos;t yet been committed by a
+call to -[DBDatastore sync:].</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL outgoing</Declaration>
+			
+			
+			<Anchor>//api/name/outgoing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreStatus/outgoing</TokenIdentifier>
+			<Abstract type="html">Whether there are local changes that haven&apos;t yet been committed by a
+call to -[DBDatastore sync:].</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL outgoing</Declaration>
+			
+			
+			<Anchor>//api/name/outgoing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreStatus/setNeedsReset:</TokenIdentifier>
+			<Abstract type="html">Whether the local datastore needs to be reset with a call to
+-[DBDatastore close:] followed by -[DBDatastoreManager uncacheDatastore:].</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL needsReset</Declaration>
+			
+			
+			<Anchor>//api/name/needsReset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreStatus/needsReset</TokenIdentifier>
+			<Abstract type="html">Whether the local datastore needs to be reset with a call to
+-[DBDatastore close:] followed by -[DBDatastoreManager uncacheDatastore:].</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL needsReset</Declaration>
+			
+			
+			<Anchor>//api/name/needsReset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreStatus/setUploadError:</TokenIdentifier>
+			<Abstract type="html">The latest error preventing local datastore state from being uploaded, or nil if there is no error</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBError *uploadError</Declaration>
+			
+			
+			<Anchor>//api/name/uploadError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreStatus/uploadError</TokenIdentifier>
+			<Abstract type="html">The latest error preventing local datastore state from being uploaded, or nil if there is no error</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBError *uploadError</Declaration>
+			
+			
+			<Anchor>//api/name/uploadError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreStatus/setDownloadError:</TokenIdentifier>
+			<Abstract type="html">The latest error preventing remote datastore state from being downloaded, or nil if there is no error</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBError *downloadError</Declaration>
+			
+			
+			<Anchor>//api/name/downloadError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreStatus/downloadError</TokenIdentifier>
+			<Abstract type="html">The latest error preventing remote datastore state from being downloaded, or nil if there is no error</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBError *downloadError</Declaration>
+			
+			
+			<Anchor>//api/name/downloadError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreStatus/setAnyError:</TokenIdentifier>
+			<Abstract type="html">An error (downloadError or uploadError) affecting this datastore, or nil if there is no error.
+This is a convenience for determining whether any operations are failing.</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBError *anyError</Declaration>
+			
+			
+			<Anchor>//api/name/anyError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreStatus/anyError</TokenIdentifier>
+			<Abstract type="html">An error (downloadError or uploadError) affecting this datastore, or nil if there is no error.
+This is a convenience for determining whether any operations are failing.</Abstract>
+			<DeclaredIn>DBDatastoreStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBError *anyError</Declaration>
+			
+			
+			<Anchor>//api/name/anyError</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

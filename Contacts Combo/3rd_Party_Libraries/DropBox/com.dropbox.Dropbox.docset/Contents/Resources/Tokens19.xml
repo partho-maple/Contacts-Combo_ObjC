@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBTable.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBTable</TokenIdentifier>
+			<Abstract type="html">A collection of records that lets you query for existing records or insert new ones. You can
+get an instance using the getTable: or getTables: methods on DBDatastore.
+&lt;!-- paragraph separator in class docs for appledoc bug --&gt;
+In addition to querying and inserting records, you can also set custom conflict resolution rules.
+&lt;!-- paragraph separator in class docs for appledoc bug --&gt;
+When using the max and min resolution rules, values are compared as follows: integer,
+floating point, boolean, and date values are ordered by their numerical value.  String, byte, and
+list values are lexicographically ordered. Integer and floating point values are compared to each
+other by casting to double, but boolean values are treated as a distinct type ordered before all
+other numbers.  Other values of distinct types are ordered by type, in the order listed
+above.  For example, all boolean values are ordered before all other numeric values, which in
+turn are ordered before all string values.</Abstract>
+			<DeclaredIn>DBTable.h</DeclaredIn>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DBTable/isValidId:</TokenIdentifier>
+			<Abstract type="html">Returns YES if tableId is a valid ID for a DBTable, or NO otherwise.
+IDs are case-sensitive, can be 1-64 characters long and may contain alphanumeric
+characters plus these punctuation characters: . - _ + / =
+IDs with a leading : are valid, but reserved for internal use.  (Note that older SDKs
+limited these to 32 characters, so take care if your datastore needs to be accessed by
+legacy clients.)</Abstract>
+			<DeclaredIn>DBTable.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isValidId:(NSString *)tableId</Declaration>
+			
+			
+			<Anchor>//api/name/isValidId:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBTable/query:error:</TokenIdentifier>
+			<Abstract type="html">Returns records matching the provided filter, or all records if filter is nil.</Abstract>
+			<DeclaredIn>DBTable.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)query:(NSDictionary *)filter error:(DBError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filter</Name>
+					<Abstract type="html">For every key value pair in filter, the query will only return records where the
+field with the same name has the same value.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/query:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBTable/getRecord:error:</TokenIdentifier>
+			<Abstract type="html">Returns a record with the given recordId, or nil if that record doesn&apos;t exist or an error
+occurred.</Abstract>
+			<DeclaredIn>DBTable.h</DeclaredIn>			
+			
+			<Declaration>- (DBRecord *)getRecord:(NSString *)recordId error:(DBError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/getRecord:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBTable/getOrInsertRecord:fields:inserted:error:</TokenIdentifier>
+			<Abstract type="html">Returns a record with the given recordId (unmodified), or inserts a new record with
+the initial set of fields if it doesn&apos;t exist already.</Abstract>
+			<DeclaredIn>DBTable.h</DeclaredIn>			
+			
+			<Declaration>- (DBRecord *)getOrInsertRecord:(NSString *)recordId fields:(NSDictionary *)fields inserted:(BOOL *)inserted error:(DBError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>inserted</Name>
+					<Abstract type="html">if provided, the BOOL pointed to by inserted will be set to YES if a new record
+was inserted, or NO otherwise.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the record if it is present in the table or inserted, or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/getOrInsertRecord:fields:inserted:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBTable/insert:</TokenIdentifier>
+			<Abstract type="html">Insert a new record with the initial set of fields into this table with a unique record ID.</Abstract>
+			<DeclaredIn>DBTable.h</DeclaredIn>			
+			
+			<Declaration>- (DBRecord *)insert:(NSDictionary *)fields</Declaration>
+			
+			
+			<Anchor>//api/name/insert:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBTable/setResolutionRule:forField:</TokenIdentifier>
+			<Abstract type="html">Sets pattern as the resolution pattern for conflicts involving the given fieldname.
+The new resolution rule will be applied when merging local changes with remote changes during a
+call to -[DBDatastore sync:].</Abstract>
+			<DeclaredIn>DBTable.h</DeclaredIn>			
+			
+			<Declaration>- (void)setResolutionRule:(DBResolutionRule)rule forField:(NSString *)field</Declaration>
+			
+			
+			<Anchor>//api/name/setResolutionRule:forField:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBTable/setTableId:</TokenIdentifier>
+			<Abstract type="html">The ID of the table.</Abstract>
+			<DeclaredIn>DBTable.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *tableId</Declaration>
+			
+			
+			<Anchor>//api/name/tableId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBTable/tableId</TokenIdentifier>
+			<Abstract type="html">The ID of the table.</Abstract>
+			<DeclaredIn>DBTable.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *tableId</Declaration>
+			
+			
+			<Anchor>//api/name/tableId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBTable/setDatastore:</TokenIdentifier>
+			<Abstract type="html">The datastore that contains this table.</Abstract>
+			<DeclaredIn>DBTable.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBDatastore *datastore</Declaration>
+			
+			
+			<Anchor>//api/name/datastore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBTable/datastore</TokenIdentifier>
+			<Abstract type="html">The datastore that contains this table.</Abstract>
+			<DeclaredIn>DBTable.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBDatastore *datastore</Declaration>
+			
+			
+			<Anchor>//api/name/datastore</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

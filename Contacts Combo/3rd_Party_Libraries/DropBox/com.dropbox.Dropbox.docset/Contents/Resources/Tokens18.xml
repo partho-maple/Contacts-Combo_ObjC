@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBSyncStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBSyncStatus</TokenIdentifier>
+			<Abstract type="html">The current status of background synchronization for a DBFilesystem.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBSyncStatus/setActive:</TokenIdentifier>
+			<Abstract type="html">Background synchronization is actively processing or waiting for
+changes. Syncing is active when a DBFilesystem is first created until
+it completes its first file info sync.  After that point it is active
+whenever there are changes to download or upload, or when there are any files
+open or path observers registered.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBSyncStatus/active</TokenIdentifier>
+			<Abstract type="html">Background synchronization is actively processing or waiting for
+changes. Syncing is active when a DBFilesystem is first created until
+it completes its first file info sync.  After that point it is active
+whenever there are changes to download or upload, or when there are any files
+open or path observers registered.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBSyncStatus/setMetadata:</TokenIdentifier>
+			<Abstract type="html">Status of synchronizing info about files and folders. Metadata sync is
+only considered in progress when it is actively processing new changes,
+not when it is simply watching for changes.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBSyncOperationStatus *metadata</Declaration>
+			
+			
+			<Anchor>//api/name/metadata</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBSyncStatus/metadata</TokenIdentifier>
+			<Abstract type="html">Status of synchronizing info about files and folders. Metadata sync is
+only considered in progress when it is actively processing new changes,
+not when it is simply watching for changes.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBSyncOperationStatus *metadata</Declaration>
+			
+			
+			<Anchor>//api/name/metadata</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBSyncStatus/setDownload:</TokenIdentifier>
+			<Abstract type="html">Status of downloading file contents into the cache.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBSyncOperationStatus *download</Declaration>
+			
+			
+			<Anchor>//api/name/download</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBSyncStatus/download</TokenIdentifier>
+			<Abstract type="html">Status of downloading file contents into the cache.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBSyncOperationStatus *download</Declaration>
+			
+			
+			<Anchor>//api/name/download</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBSyncStatus/setUpload:</TokenIdentifier>
+			<Abstract type="html">Status of uploading changes to the server. This includes changes to file
+contents, as well as creation, deletion, and renames.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBSyncOperationStatus *upload</Declaration>
+			
+			
+			<Anchor>//api/name/upload</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBSyncStatus/upload</TokenIdentifier>
+			<Abstract type="html">Status of uploading changes to the server. This includes changes to file
+contents, as well as creation, deletion, and renames.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBSyncOperationStatus *upload</Declaration>
+			
+			
+			<Anchor>//api/name/upload</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBSyncStatus/setAnyInProgress:</TokenIdentifier>
+			<Abstract type="html">Convenience property for checking whether any type of operation is in
+progress.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL anyInProgress</Declaration>
+			
+			
+			<Anchor>//api/name/anyInProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBSyncStatus/anyInProgress</TokenIdentifier>
+			<Abstract type="html">Convenience property for checking whether any type of operation is in
+progress.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL anyInProgress</Declaration>
+			
+			
+			<Anchor>//api/name/anyInProgress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBSyncStatus/setAnyError:</TokenIdentifier>
+			<Abstract type="html">Convenience property for determining whether any operation failed, and
+getting an appropriate DBError. If there are multiple failures, the
+DBError returned will be taken from metadata, download, or upload status in
+that order.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBSyncOperationStatus *anyError</Declaration>
+			
+			
+			<Anchor>//api/name/anyError</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBSyncStatus/anyError</TokenIdentifier>
+			<Abstract type="html">Convenience property for determining whether any operation failed, and
+getting an appropriate DBError. If there are multiple failures, the
+DBError returned will be taken from metadata, download, or upload status in
+that order.</Abstract>
+			<DeclaredIn>DBSyncStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBSyncOperationStatus *anyError</Declaration>
+			
+			
+			<Anchor>//api/name/anyError</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>Dropbox</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>DBAccount</Name>
+			<Path>Classes/DBAccount.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>DBAccountInfo</Name>
+			<Path>Classes/DBAccountInfo.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>DBAccountManager</Name>
+			<Path>Classes/DBAccountManager.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>DBDatastore</Name>
+			<Path>Classes/DBDatastore.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>DBDatastoreInfo</Name>
+			<Path>Classes/DBDatastoreInfo.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>DBDatastoreManager</Name>
+			<Path>Classes/DBDatastoreManager.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>DBDatastoreStatus</Name>
+			<Path>Classes/DBDatastoreStatus.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>DBError</Name>
+			<Path>Classes/DBError.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>DBException</Name>
+			<Path>Classes/DBException.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>DBFile</Name>
+			<Path>Classes/DBFile.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>DBFileInfo</Name>
+			<Path>Classes/DBFileInfo.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>DBFileStatus</Name>
+			<Path>Classes/DBFileStatus.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>DBFilesystem</Name>
+			<Path>Classes/DBFilesystem.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>DBList</Name>
+			<Path>Classes/DBList.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>DBPath</Name>
+			<Path>Classes/DBPath.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>DBRecord</Name>
+			<Path>Classes/DBRecord.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>DBSyncOperationStatus</Name>
+			<Path>Classes/DBSyncOperationStatus.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>DBSyncStatus</Name>
+			<Path>Classes/DBSyncStatus.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>DBTable</Name>
+			<Path>Classes/DBTable.html</Path>
+		</Node>
+		
+		
+		
+	</Library>
+</DocSetNodes>

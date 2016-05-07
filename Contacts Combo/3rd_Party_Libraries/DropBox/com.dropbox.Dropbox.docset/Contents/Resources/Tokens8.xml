@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBError.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBError</TokenIdentifier>
+			<Abstract type="html">The DBError class is a subclass of NSError that always has domain set to DBErrorDomain.
+&lt;!-- paragraph separator in class docs for appledoc bug --&gt;
+Any method expected to fail will return a DBError object via the last parameter.
+Additionally, errors that happen in the background via syncing can also be retrieved, such
+as the error property on DBFileStatus.
+&lt;!-- paragraph separator in class docs for appledoc bug --&gt;
+Some failures (those which represent bugs or internal errors) will instead raise a DBException
+when they occur in an API method. A DBError will still be used if such a failure occurs
+on a background thread.</Abstract>
+			<DeclaredIn>DBError.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBError/code</TokenIdentifier>
+			<Abstract type="html">The code on a DBError object is always listed in the DBErrorCode enum.</Abstract>
+			<DeclaredIn>DBError.h</DeclaredIn>			
+			
+			<Declaration>- (DBErrorCode)code</Declaration>
+			
+			
+			<Anchor>//api/name/code</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

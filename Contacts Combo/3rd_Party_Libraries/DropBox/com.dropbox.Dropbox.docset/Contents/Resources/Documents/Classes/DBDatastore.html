@@ -1,0 +1,1210 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DBDatastore Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Dropbox </a></h1>
+				<a id="developerHome" href="../index.html">Dropbox, Inc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DBDatastore Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/datastoreId">&nbsp;&nbsp;&nbsp;&nbsp;datastoreId</option>
+	
+	<option value="//api/name/manager">&nbsp;&nbsp;&nbsp;&nbsp;manager</option>
+	
+	<option value="//api/name/mtime">&nbsp;&nbsp;&nbsp;&nbsp;mtime</option>
+	
+	<option value="//api/name/open">&nbsp;&nbsp;&nbsp;&nbsp;open</option>
+	
+	<option value="//api/name/recordCount">&nbsp;&nbsp;&nbsp;&nbsp;recordCount</option>
+	
+	<option value="//api/name/size">&nbsp;&nbsp;&nbsp;&nbsp;size</option>
+	
+	<option value="//api/name/status">&nbsp;&nbsp;&nbsp;&nbsp;status</option>
+	
+	<option value="//api/name/title">&nbsp;&nbsp;&nbsp;&nbsp;title</option>
+	
+	<option value="//api/name/unsyncedChangesSize">&nbsp;&nbsp;&nbsp;&nbsp;unsyncedChangesSize</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/isValidId:">&nbsp;&nbsp;&nbsp;&nbsp;+ isValidId:</option>
+	
+	<option value="//api/name/openDefaultLocalStoreForAccountManager:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ openDefaultLocalStoreForAccountManager:error:</option>
+	
+	<option value="//api/name/openDefaultStoreForAccount:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ openDefaultStoreForAccount:error:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addObserver:block:">&nbsp;&nbsp;&nbsp;&nbsp;- addObserver:block:</option>
+	
+	<option value="//api/name/close">&nbsp;&nbsp;&nbsp;&nbsp;- close</option>
+	
+	<option value="//api/name/getTable:">&nbsp;&nbsp;&nbsp;&nbsp;- getTable:</option>
+	
+	<option value="//api/name/getTables:">&nbsp;&nbsp;&nbsp;&nbsp;- getTables:</option>
+	
+	<option value="//api/name/removeObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- removeObserver:</option>
+	
+	<option value="//api/name/sync:">&nbsp;&nbsp;&nbsp;&nbsp;- sync:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/datastoreId">datastoreId</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/manager">manager</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mtime">mtime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/open">open</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recordCount">recordCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/size">size</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/status">status</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/title">title</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unsyncedChangesSize">unsyncedChangesSize</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isValidId:">isValidId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openDefaultLocalStoreForAccountManager:error:">openDefaultLocalStoreForAccountManager:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openDefaultStoreForAccount:error:">openDefaultStoreForAccount:error:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addObserver:block:">addObserver:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/close">close</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getTable:">getTable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getTables:">getTables:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeObserver:">removeObserver:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sync:">sync:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DBDatastore Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DBDatastore Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DBDatastore.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A datastore is a simple, syncable database for app data. You can open the default datastore
+using <a href="#//api/name/openDefaultStoreForAccount:error:">openDefaultStoreForAccount:error:</a> and open or create other datastores using a
+<a href="../Classes/DBDatastoreManager.html">DBDatastoreManager</a>.</p>
+
+<!-- paragraph separator in class docs for appledoc bug -->
+
+
+<p>You interact with data in the datastore using tables. You can call <a href="#//api/name/getTable:">getTable:</a> to get a table,
+or <a href="#DBDatastore.getTables:">getTables:</a> to list all tables in a datastore containing
+records.</p>
+
+<!-- paragraph separator in class docs for appledoc bug -->
+
+
+<p>Changes you make to the datastore will be visible immediately, and calling <a href="#//api/name/sync:">sync:</a> will persist
+outgoing changes and queue them to be uploaded to the server. While a datastore is open, it will
+monitor for remote changes and download them when possible. When there are remote changes waiting
+to be incorporated, the <a href="../Classes/DBDatastoreStatus.html">DBDatastoreStatus</a> will have its <code>incoming</code> property set to <code>YES</code>, and calling
+<a href="#//api/name/sync:">sync:</a> will also apply those changes to your view of the datastore, resolving any conflicts along
+the way.</p>
+
+<!-- paragraph separator in class docs for appledoc bug -->
+
+
+<p>To find out when there are changes ready to be synced, add an observer using <a href="#//api/name/addObserver:block:">addObserver:block:</a>
+to register a block that will be called every time <a href="#//api/name/status">status</a> changes.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isValidId:">+&nbsp;isValidId:</a></code>
+		<span class="tooltip"><p>Returns <code>YES</code> if <code>datastoreId</code> is a valid ID for a <code>DBDatastore</code>, or <code>NO</code> otherwise.
+Datastore IDs come in 2 forms:</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openDefaultStoreForAccount:error:">+&nbsp;openDefaultStoreForAccount:error:</a></code>
+		<span class="tooltip"><p>Opens the default datastore for this account.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openDefaultLocalStoreForAccountManager:error:">+&nbsp;openDefaultLocalStoreForAccountManager:error:</a></code>
+		<span class="tooltip"><p>Opens the local default datastore for this account manager.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/close">&ndash;&nbsp;close</a></code>
+		<span class="tooltip"><p>Close a datastore when you&rsquo;re done using it to indicate that you are no longer
+interested in receiving updates for this datastore.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getTables:">&ndash;&nbsp;getTables:</a></code>
+		<span class="tooltip"><p>Get all the tables in this datastore that contain records.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getTable:">&ndash;&nbsp;getTable:</a></code>
+		<span class="tooltip"><p>Get a table with the specified ID, which can be used to insert or query records. If this is a
+new table ID, the table will not be visible until a record is inserted.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
+		<span class="tooltip"><p>Set the title for this datastore.  Will be <code>nil</code> if no title is set.
+Setting it to <code>nil</code> will delete the title field.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mtime">&nbsp;&nbsp;mtime</a></code>
+		<span class="tooltip"><p>The last modified time for this datastore, or nil if no data has been
+synced yet.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
+		<span class="tooltip"><p>The current size of this datastore in bytes.  The overall size
+of a datastore is calculated by summing the size of all records,
+plus the base size of an empty datastore itself.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recordCount">&nbsp;&nbsp;recordCount</a></code>
+		<span class="tooltip"><p>The total number of records in this datastore.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unsyncedChangesSize">&nbsp;&nbsp;unsyncedChangesSize</a></code>
+		<span class="tooltip"><p>The size in bytes of changes that will be queued for upload
+by the next call to <a href="#//api/name/sync:">sync:</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sync:">&ndash;&nbsp;sync:</a></code>
+		<span class="tooltip"><p>Apply all outstanding changes to the datastore, and also incorporate remote changes in.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/open">&nbsp;&nbsp;open</a></code>
+		<span class="tooltip"><p>Whether the datastore is currently open.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/status">&nbsp;&nbsp;status</a></code>
+		<span class="tooltip"><p>The current sync status of the datastore.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addObserver:block:">&ndash;&nbsp;addObserver:block:</a></code>
+		<span class="tooltip"><p>Add <code>block</code> as an observer when the status of the datastore changes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeObserver:">&ndash;&nbsp;removeObserver:</a></code>
+		<span class="tooltip"><p>Remove all blocks registered for the given <code>observer</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/datastoreId">&nbsp;&nbsp;datastoreId</a></code>
+		<span class="tooltip"><p>The ID for this datastore.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/manager">&nbsp;&nbsp;manager</a></code>
+		<span class="tooltip"><p>The datastore manager for this datastore.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/datastoreId" title="datastoreId"></a>
+	<h3 class="subsubtitle method-title">datastoreId</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The ID for this datastore.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *datastoreId</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/manager" title="manager"></a>
+	<h3 class="subsubtitle method-title">manager</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The datastore manager for this datastore.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) DBDatastoreManager *manager</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mtime" title="mtime"></a>
+	<h3 class="subsubtitle method-title">mtime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The last modified time for this datastore, or nil if no data has been
+synced yet.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDate *mtime</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The last modified time is automatically updated on each call to <a href="#//api/name/sync:">sync:</a>
+which commits local changes, or incorporates remote changes. The timestamp is based
+on the local clock of the device where the change is made.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/open" title="open"></a>
+	<h3 class="subsubtitle method-title">open</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the datastore is currently open.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isOpen) BOOL open</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recordCount" title="recordCount"></a>
+	<h3 class="subsubtitle method-title">recordCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The total number of records in this datastore.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger recordCount</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/size" title="size"></a>
+	<h3 class="subsubtitle method-title">size</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current size of this datastore in bytes.  The overall size
+of a datastore is calculated by summing the size of all records,
+plus the base size of an empty datastore itself.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger size</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/status" title="status"></a>
+	<h3 class="subsubtitle method-title">status</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current sync status of the datastore.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) DBDatastoreStatus *status</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/title" title="title"></a>
+	<h3 class="subsubtitle method-title">title</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the title for this datastore.  Will be <code>nil</code> if no title is set.
+Setting it to <code>nil</code> will delete the title field.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *title</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unsyncedChangesSize" title="unsyncedChangesSize"></a>
+	<h3 class="subsubtitle method-title">unsyncedChangesSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The size in bytes of changes that will be queued for upload
+by the next call to <a href="#//api/name/sync:">sync:</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger unsyncedChangesSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/isValidId:" title="isValidId:"></a>
+	<h3 class="subsubtitle method-title">isValidId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns <code>YES</code> if <code>datastoreId</code> is a valid ID for a <code>DBDatastore</code>, or <code>NO</code> otherwise.
+Datastore IDs come in 2 forms:</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isValidId:(NSString *)<em>datastoreId</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Named datastores (such as the default datastore) use IDs which
+can be 1-64 characters long, must not begin or end with a &lsquo;.&rsquo;, and may contain lower-case
+letters, digits, and these punctuation characters: . &ndash; _  (Note that older SDKs limited these
+to 32 characters, so take care if your datastore needs to be accessed by legacy clients.)</p>
+
+<p>Globally unique datastore IDs (generated by `&ndash;[DBDatastoreManager createDatastore:]) always
+begin with a &lsquo;.&rsquo; and can contain 1-63 additional characters which can be upper-case, lower-case,
+digits, and these punctuation characters: . &ndash;</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openDefaultLocalStoreForAccountManager:error:" title="openDefaultLocalStoreForAccountManager:error:"></a>
+	<h3 class="subsubtitle method-title">openDefaultLocalStoreForAccountManager:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Opens the local default datastore for this account manager.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (DBDatastore *)openDefaultLocalStoreForAccountManager:(DBAccountManager *)<em>accountManager</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Local datastores and migration are a preview feature for testing only, and should not
+be used in production apps.</strong></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openDefaultStoreForAccount:error:" title="openDefaultStoreForAccount:error:"></a>
+	<h3 class="subsubtitle method-title">openDefaultStoreForAccount:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Opens the default datastore for this account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (DBDatastore *)openDefaultStoreForAccount:(DBAccount *)<em>account</em> error:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addObserver:block:" title="addObserver:block:"></a>
+	<h3 class="subsubtitle method-title">addObserver:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add <code>block</code> as an observer when the status of the datastore changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addObserver:(id)<em>observer</em> block:(DBObserver)<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/close" title="close"></a>
+	<h3 class="subsubtitle method-title">close</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Close a datastore when you&rsquo;re done using it to indicate that you are no longer
+interested in receiving updates for this datastore.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)close</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Any changes made since the last call to <a href="#//api/name/sync:">sync:</a> will be discarded on close. If the account is
+unlinked remotely, the datastore will close automatically.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getTable:" title="getTable:"></a>
+	<h3 class="subsubtitle method-title">getTable:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get a table with the specified ID, which can be used to insert or query records. If this is a
+new table ID, the table will not be visible until a record is inserted.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (DBTable *)getTable:(NSString *)<em>tableId</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getTables:" title="getTables:"></a>
+	<h3 class="subsubtitle method-title">getTables:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get all the tables in this datastore that contain records.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)getTables:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeObserver:" title="removeObserver:"></a>
+	<h3 class="subsubtitle method-title">removeObserver:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove all blocks registered for the given <code>observer</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeObserver:(id)<em>observer</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sync:" title="sync:"></a>
+	<h3 class="subsubtitle method-title">sync:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Apply all outstanding changes to the datastore, and also incorporate remote changes in.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)sync:(DBError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A dictionary mapping of <code>tableId</code> to a set of <a href="../Classes/DBRecord.html">DBRecord</a> objects if the call was
+successful, or <code>nil</code> if an error occurred. The table IDs and records in the dictionary correspond
+to the tables and records that changed due to remote changes applied during this sync. If records
+are deleted by the sync, the <code>DBRecord</code>s will have the <code>deleted</code> property set, but no fields.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DBDatastore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Dropbox, Inc. All rights reserved. (Last updated: 2014-07-31)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

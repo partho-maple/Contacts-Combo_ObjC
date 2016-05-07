@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBDatastoreInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBDatastoreInfo</TokenIdentifier>
+			<Abstract type="html">The datastore info class contains basic information about a datastore.</Abstract>
+			<DeclaredIn>DBDatastoreInfo.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreInfo/setDatastoreId:</TokenIdentifier>
+			<Abstract type="html">The ID for this datastore.</Abstract>
+			<DeclaredIn>DBDatastoreInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *datastoreId</Declaration>
+			
+			
+			<Anchor>//api/name/datastoreId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreInfo/datastoreId</TokenIdentifier>
+			<Abstract type="html">The ID for this datastore.</Abstract>
+			<DeclaredIn>DBDatastoreInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *datastoreId</Declaration>
+			
+			
+			<Anchor>//api/name/datastoreId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreInfo/setTitle:</TokenIdentifier>
+			<Abstract type="html">The title for this datastore, or nil if none is set.</Abstract>
+			<DeclaredIn>DBDatastoreInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreInfo/title</TokenIdentifier>
+			<Abstract type="html">The title for this datastore, or nil if none is set.</Abstract>
+			<DeclaredIn>DBDatastoreInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBDatastoreInfo/setMtime:</TokenIdentifier>
+			<Abstract type="html">The last modified time for this datastore, or nil if none is set. The last modified
+time is automatically updated on each call to -[DBDatastore sync:] which commits local
+changes, or incorporates remote changes. The timestamp is based on the local clock of the
+device where the change is made.</Abstract>
+			<DeclaredIn>DBDatastoreInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *mtime</Declaration>
+			
+			
+			<Anchor>//api/name/mtime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBDatastoreInfo/mtime</TokenIdentifier>
+			<Abstract type="html">The last modified time for this datastore, or nil if none is set. The last modified
+time is automatically updated on each call to -[DBDatastore sync:] which commits local
+changes, or incorporates remote changes. The timestamp is based on the local clock of the
+device where the change is made.</Abstract>
+			<DeclaredIn>DBDatastoreInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *mtime</Declaration>
+			
+			
+			<Anchor>//api/name/mtime</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

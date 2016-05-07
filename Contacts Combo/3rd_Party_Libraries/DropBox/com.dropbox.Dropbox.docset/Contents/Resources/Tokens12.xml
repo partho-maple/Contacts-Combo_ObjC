@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBFileStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBFileStatus</TokenIdentifier>
+			<Abstract type="html">The file status object exposes information about the file&apos;s current sync status,
+including whether it&apos;s cached, if it&apos;s uploading or downloading, and the progress
+of an upload or download.</Abstract>
+			<DeclaredIn>DBFileStatus.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFileStatus/setCached:</TokenIdentifier>
+			<Abstract type="html">Whether the contents of the file are cached locally and can be read without making a network
+request.</Abstract>
+			<DeclaredIn>DBFileStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL cached</Declaration>
+			
+			
+			<Anchor>//api/name/cached</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFileStatus/cached</TokenIdentifier>
+			<Abstract type="html">Whether the contents of the file are cached locally and can be read without making a network
+request.</Abstract>
+			<DeclaredIn>DBFileStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL cached</Declaration>
+			
+			
+			<Anchor>//api/name/cached</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFileStatus/setState:</TokenIdentifier>
+			<Abstract type="html">Whether the file is currently uploading, downloading, or neither (idle)</Abstract>
+			<DeclaredIn>DBFileStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBFileState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFileStatus/state</TokenIdentifier>
+			<Abstract type="html">Whether the file is currently uploading, downloading, or neither (idle)</Abstract>
+			<DeclaredIn>DBFileStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBFileState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFileStatus/setProgress:</TokenIdentifier>
+			<Abstract type="html">If the file is transferring, the progress of the transfer, between 0 and 1.</Abstract>
+			<DeclaredIn>DBFileStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) float progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFileStatus/progress</TokenIdentifier>
+			<Abstract type="html">If the file is transferring, the progress of the transfer, between 0 and 1.</Abstract>
+			<DeclaredIn>DBFileStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) float progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBFileStatus/setError:</TokenIdentifier>
+			<Abstract type="html">If the file needs to be transferred, but can&apos;t for whatever reason (such as no internet
+connection), then this property is set to the last error that prevented the transfer.</Abstract>
+			<DeclaredIn>DBFileStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBFileStatus/error</TokenIdentifier>
+			<Abstract type="html">If the file needs to be transferred, but can&apos;t for whatever reason (such as no internet
+connection), then this property is set to the last error that prevented the transfer.</Abstract>
+			<DeclaredIn>DBFileStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

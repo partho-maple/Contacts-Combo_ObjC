@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DBException.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DBException</TokenIdentifier>
+			<Abstract type="html">The DBException class is a subclass of NSException that always has name set to
+DBExceptionName.  A DBException is raised by a failure in an API method which indicates
+programming errors or internal SDK problems.
+&lt;!-- paragraph separator in class docs for appledoc bug --&gt;
+You should generally not have to catch a DBException, but the error property will allow you
+to classify or translate one if you need to.</Abstract>
+			<DeclaredIn>DBError.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DBException/setError:</TokenIdentifier>
+			<Abstract type="html">Information about the error which caused this exception to be raised.</Abstract>
+			<DeclaredIn>DBError.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DBException/error</TokenIdentifier>
+			<Abstract type="html">Information about the error which caused this exception to be raised.</Abstract>
+			<DeclaredIn>DBError.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) DBError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
