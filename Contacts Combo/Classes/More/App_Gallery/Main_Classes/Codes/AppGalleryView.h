@@ -2,8 +2,8 @@
 //  AppGalleryView.h
 //  AppGallery
 //
-//  Created by Daniel Sadjadian on 16/08/2014.
-//  Copyright (c) 2014 Daniel Sadjadian. All rights reserved.
+//  Created by Partho Biswas on 16/08/2014.
+//  Copyright (c) 2014 Partho Biswas. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,7 +11,7 @@
 #import "CustomCell.h"
 #import "DetailView.h"
 
-// Replace 'danielsadjadian' with your developer name. make sure your
+// Replace 'partho-biswas' with your developer name. make sure your
 // developer name is typed like the above with no spaces or capital letters.
 #define DEV_NAME @"partho-biswas"
 
